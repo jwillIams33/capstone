@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
     return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
 <li><Link to="/greenPage">Green</Link></li>
 <li><Link to="/yellowPage">Yellow</Link></li>
 </ul>
+<Footer />
 </section>
     )
 }
