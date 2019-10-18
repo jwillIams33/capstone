@@ -2,8 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import ColorList from "../components/colorList"
 import yellowBunk from "../images/imagelist"
+import { Link } from "gatsby"
 
 import boxStyles from "../components/box.module.css"
+import flexboxGrid from "../components/flexboxGrid.module.css"
 
 
 
@@ -16,7 +18,24 @@ const IndexPage = (props) => {
             <h2>Choose Your Color</h2>
              <ColorList />
              <div className={boxStyles.container}>
-                <div className ={boxStyles.box}>Green</div>
+               <div className ={flexboxGrid.row}>
+                 <div className = {flexboxGrid.column}>
+                 <Link to ="/yellowPage"><img src = {yellowBunk} alt = "yellow double bunk room"/></Link>
+                 </div>
+                 <div className = {flexboxGrid.column}>
+                    <Link to ="/yellowPage"><img src = {yellowBunk} alt = "yellow double bunk room"/></Link>
+                 </div>
+               </div>
+               <div className ={flexboxGrid.row}>
+                 <div className = {flexboxGrid.column}>
+                 <Link to ="/yellowPage"><img src = {yellowBunk} alt = "yellow double bunk room"/></Link>
+                 </div>
+                 <div className = {flexboxGrid.column}>
+                 <Link to ="/yellowPage"><img src = {yellowBunk} alt = "yellow double bunk room"/></Link>
+                 </div>
+               </div>
+               
+               
                 <div className ={boxStyles.box}>Red</div>
                 <div className ={boxStyles.box}>Yellow</div>
                 <div className ={boxStyles.box}>Blue</div>
