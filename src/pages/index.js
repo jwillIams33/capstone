@@ -20,10 +20,10 @@ const IndexPage = (props) => {
              <div className={boxStyles.container}>
                <div className ={flexboxGrid.row}>
                  <div className = {flexboxGrid.column}>
-                 <Link to ="/yellowPage"><img src = {imagelist.blueDouble} alt = "yellow double bunk room"/></Link>
+                 <Link to ="/yellowPage"><img src = {imagelist.redQueen} alt = "yellow double bunk room"/></Link>
                  </div>
                  <div className = {flexboxGrid.column}>
-                    <Link to ="/yellowPage"><img src = {imagelist.blueDouble} alt = "yellow double bunk room"/></Link>
+                    <Link to ="/yellowPage"><img src = {imagelist.greenKing} alt = "yellow double bunk room"/></Link>
                  </div>
                </div>
                <div className ={flexboxGrid.row}>
