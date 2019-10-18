@@ -4,13 +4,18 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const path = require(`path`);
+
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Capstone',
+    author: 'Jamal Williams'
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, 'src', 'images'),
         name: 'images'
       }
     },
