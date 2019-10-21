@@ -36,7 +36,20 @@ const imageList = {
     redSuite: redSuite,
     redBath: redBath,
     redLoft: redLoft,
-    greenKing: greenKing
+    redPromo1: redPromo1,
+    redPromo2: redPromo2,
+    redMaster1: redMaster1,
+    redMaster2: redMaster2,
+    redMaster3: redMaster3,
+    red1: red1,
+    red2: red2,
+    red4: red4,
+    red5: red5,
+    red6: red6,
+    greenKing: greenKing,
+    greenSuite: greenSuite,
+    greenDouble: greenDouble
+
 
 }
 

@@ -12,3 +12,14 @@
     margin-right: 1.3rem;
     margin-bottom: 1.3rem;
 }
+
+.imgContainer {
+    /* height: auto;
+    width: 100%; */
+    overflow: hidden;
+}
+
+.img {
+    width: 1000px;
+    height: auto;
+}
