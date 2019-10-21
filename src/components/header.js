@@ -2,10 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import headerStyles from './header.module.css'
+import flexboxGrid from './flexboxGrid.module.css'
 
 const Header = () => {
     return (
-        <header className={headerStyles.navbar}>
+        <div className = {flexboxGrid.row}>
+            <div className = {flexboxGrid.column}>
+            <header className={headerStyles.navbar}>
               <h2>Logo</h2>
               <nav>
                   <ul className = {headerStyles.navList}>
@@ -24,7 +27,9 @@ const Header = () => {
                   </ul>
               </nav>
         </header>
-      
+
+            </div>
+        </div>
     )
 }
 

@@ -49,8 +49,6 @@ const imageList = {
     greenKing: greenKing,
     greenSuite: greenSuite,
     greenDouble: greenDouble
-
-
 }
 
 // const yellowBunk = require ('./yellow_bunk.jpg');
