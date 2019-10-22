@@ -7,6 +7,7 @@ import boxStyles from "../components/box.module.css"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
 import redKing from "../images/red/red_king.jpg"
+import blueQueen from "../images/blue/blue_queen.jpg"
 
 import layoutStyles from "../components/layout.module.css"
 
@@ -18,8 +19,19 @@ const bg = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   width: '100%',
-  height: '100%'
+  height: '100%',
+  overflow: 'hidden'
   };
+
+  const bg2 = {
+    backgroundImage: 'url(' + blueQueen + ')',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
+    overflow: 'hidden'
+    };
 
 
 
@@ -41,11 +53,11 @@ const IndexPage = (props) => {
              <div className={boxStyles.container}>
                <div className ={flexboxGrid.row}>
                  <div className = {flexboxGrid.column}>
-                 <Link to ="/yellowPage"><div className={boxStyles.imgContainer}><img src = {imagelist.redQueen} className="boxStyles.img" alt = "yellow double bunk room"/></div></Link>
+                 <div style = {bg}></div>
                  </div>
                  <div className = {flexboxGrid.column}>
-                   {/* <div style = {bg}></div> */}
-                    <Link to ="/yellowPage"><img src = {imagelist.greenKing} alt = "yellow double bunk room"/></Link>
+                   <div style = {bg2}></div>
+                    {/* <Link to ="/yellowPage"><img src = {imagelist.greenKing} alt = "yellow double bunk room"/></Link> */}
                  </div>
                </div>
                <div className ={flexboxGrid.row}>
