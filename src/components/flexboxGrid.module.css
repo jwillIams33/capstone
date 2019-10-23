@@ -2,9 +2,14 @@
 
 .column {
   flex-basis: 100%;
+  margin: .8rem;
 }
 .hero {
-  line-height: 15rem;
+  line-height: 20rem;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
 }
 
 
@@ -16,7 +21,7 @@
   }
 
   .hero {
-    line-height: 20rem;
+    line-height: 50vh;
   }
 
   .column {
@@ -66,12 +71,15 @@ body {
 }
 
 .column {
-  border: 1px solid #666;
-  background: #343436;
   color: #ffffff;
   text-align: center;
 }
 
+@media screen and (min-width: 1000px){
+  .hero {
+   
+  }
+}
 
 
 h1,
@@ -107,7 +115,6 @@ h2 {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  background: #343436;
 }
 
 .linkStyles {
