@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import imagelist from "../images/imagelist"
 import { Link } from "gatsby"
 
+import headerStyles from '../components/header.module.css'
+
 import boxStyles from "../components/box.module.css"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
@@ -37,41 +39,75 @@ const bg = {
 
 const IndexPage = (props) => {
     return (
-        <Layout>
-            {/* <img src = {imagelist.blueDouble} alt = "yellow double bunk room"/> */}
-            <div className={layoutStyles.imgContainer}>
-                <div style = {bg}></div>
+      <div className ={flexboxGrid.container}>
+            <div className ={flexboxGrid.row}>
+              <div className ={flexboxGrid.column}>
+                  <header className={flexboxGrid.navbar}>
+                      <h2>Logo</h2>
+                      <nav>
+                          <ul className = {flexboxGrid.navList}>
+                              <li>
+                                  <Link className={flexboxGrid.navItem} to="/">Rooms</Link>
+                              </li>
+                              <li>
+                                  <Link className={flexboxGrid.navItem}  to="/">Dining &amp; Bars </Link>
+                              </li>
+                              <li>
+                                  <Link className={flexboxGrid.navItem}  to="/">Meetings &amp; Catering</Link>
+                              </li>
+                              <li>
+                                  <Link className={flexboxGrid.navItem}  to="/">AAH! Tonight</Link>
+                              </li>
+                          </ul>
+                      </nav>
+                    </header>
+              </div>
             </div>
-            <div className = {flexboxGrid.main}>
-            <h1>Stay Colorful </h1>
-            <p>Featuring artfully designed guest rooms and suites, ours is the first hotel in the world that gives you the options of booking your room not only by bed, but also invited to experience an emotion of color – Passion Red, Tranquility Blue, Rejuvenation Green or Happiness Yellow.</p>
-            <h2>Choose Your Color</h2>
+            <div className ={flexboxGrid.row}>
+              <div className ={flexboxGrid.column}>
+                  <div className = {flexboxGrid.hero}>
+                    Hero
+                  </div>
+              </div>
+            </div>
 
+            <div className ={flexboxGrid.row}>
+              <div className ={flexboxGrid.column}>
+                <div className ={flexboxGrid.wrapper}>
+                    <h2>Stay Colorful</h2>
+                    <p>Featuring 146 artfully designed guest rooms, the first hotel
+                      in the world that gives you the option of booking your room not only
+                      by bed and room size, but also by the emotion of color.
+                    </p>
+                </div>
+              
+              </div>
             </div>
-           
-             
-             <div className={boxStyles.container}>
-               <div className ={flexboxGrid.row}>
-                 <div className = {flexboxGrid.column}>
-                 <div style = {bg}></div>
-                 </div>
-                 <div className = {flexboxGrid.column}>
-                   <div style = {bg2}></div>
-                    {/* <Link to ="/yellowPage"><img src = {imagelist.greenKing} alt = "yellow double bunk room"/></Link> */}
-                 </div>
-               </div>
-               <div className ={flexboxGrid.row}>
-                 <div className = {flexboxGrid.column}>
-                 <Link to ="/yellowPage"><img src = {imagelist.blueDouble} alt = "yellow double bunk room"/></Link>
-                 </div>
-                 <div className = {flexboxGrid.column}>
-                 <Link to ="/yellowPage"><img src = {imagelist.blueDouble} alt = "yellow double bunk room"/></Link>
-                 </div>
-               </div>
-               
-             </div>
-             
-        </Layout>
+            <div className={flexboxGrid.wrapper}>
+                <div className ={flexboxGrid.row}>
+                  <div className ={flexboxGrid.column}>
+                    <div className ={flexboxGrid.imgContainer}>
+                      <div style={bg}><Link className = {flexboxGrid.linkStyles} to="/redPage">red room</Link></div>
+                    </div>
+                  </div>
+                  <div className ={flexboxGrid.column}>
+                  <div className ={flexboxGrid.imgContainer}>
+                      <div style={bg2}></div>
+                    </div>
+                  </div>
+                </div>
+                <div className ={flexboxGrid.row}>
+                  <div className ={flexboxGrid.column}>room 1</div>
+                  <div className ={flexboxGrid.column}>room 1</div>
+                </div>
+            </div>
+         
+            
+            <div className ={flexboxGrid.row}>
+              <div className ={flexboxGrid.column}>footer</div>
+            </div>
+      </div>
+     
     )
 }
 
