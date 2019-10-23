@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from "../components/header"
 import Footer from "../components/footer"
+import flexboxGrid from './flexboxGrid.module.css'
 
 import '../styles/index.css'
-import layoutStyles from "./layout.module.css"
+
 
 const Layout = (props) => {
 
     return (
-        <div className = {layoutStyles.container}>
-            <div className = {layoutStyles.content}>
+        <div className = {flexboxGrid.container}>
+            <div className = {flexboxGrid.row}>
             <Header />
             {props.children}
             </div>

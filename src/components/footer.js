@@ -1,8 +1,11 @@
 import React from 'react'
+import flexboxGrid from './flexboxGrid.module.css'
 
 const Footer = () => {
     return (
-        <div>footer</div>
+        <div className={flexboxGrid.row}>
+        <div className={flexboxGrid.column}>footer</div>
+      </div>
     )
 }
 
