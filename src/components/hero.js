@@ -1,16 +1,20 @@
 import React from "react"
 import flexboxGrid from "../components/flexboxGrid.module.css"
+import Wrapper from './wrapper'
+import Row from './row'
+import Column from './column'
 
 
 const Hero = (props) => {
     return (
-        <div style = {props.style} className={flexboxGrid.row}>
-        <div className={flexboxGrid.column}>
-          <div className={flexboxGrid.hero}>
+       <Row>
+           <Column>
+          <div style = {props.style} className={flexboxGrid.hero}>
             Hero
           </div>
-        </div>
-      </div>
+          </Column>
+       </Row>
+    
     )
 }
 
