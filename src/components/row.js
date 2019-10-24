@@ -7,9 +7,9 @@ import '../styles/index.css'
 const Row = (props) => {
 
     return (
-        <div className = {flexboxGrid.row}>
+        <section className = {flexboxGrid.row}>
             {props.children}
-        </div>
+        </section>
        
     )
 }
