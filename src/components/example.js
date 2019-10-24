@@ -1,15 +1,20 @@
-import React from "react"
-import { useState }  from "react"
+import React, { useState } from "react"
+import DatePicker from "react-datepicker"
+import flexboxGrid from "./flexboxGrid.module.css"
 
+import "react-datepicker/dist/react-datepicker.css"
+
+// CSS Modules, react-datepicker-cssmodules.css
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 const Example = () => {
-  const [count, setCount] = useState(0)
-
+  const [startDate, setStartDate] = useState(null)
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
+    <DatePicker 
+    selected={startDate} 
+    onChange={date => setStartDate(date)}
+    placeholderText="mm/dd/yyyy"
+     />
   )
 }
 

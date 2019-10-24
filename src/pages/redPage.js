@@ -34,8 +34,9 @@ const redPage = () => {
       
         <Hero style ={bg} />
         <div className={flexboxGrid.datepicker}>
-         <Example />
-         
+          <div className={flexboxGrid.dateContainer}><Example /></div>
+          <div className={flexboxGrid.dateContainer}><Example /></div>
+      
         </div>
         <SectionContent heading = "PASSION RED ROOM" />
         <ImgGrid />

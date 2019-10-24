@@ -5,7 +5,7 @@
   margin: .8rem;
 }
 .hero {
-  line-height: 20rem;
+  line-height: 300px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -17,6 +17,18 @@
   width: 100%;
   border: 1px solid #333333;
   color: white;
+  display: flex;
+}
+
+.dateContainer {
+  padding: 15px;
+}
+
+input {
+  width:150px;
+  padding: 5px;
+  box-sizing: border-box;
+
 }
 
 
@@ -28,7 +40,7 @@
   }
 
   .hero {
-    line-height: 50vh;
+    line-height: 600px;
   }
 
   .column {
@@ -84,7 +96,7 @@ body {
 
 @media screen and (min-width: 1000px){
   .hero {
-   
+   line-height: 800px;
   }
 }
 
