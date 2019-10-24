@@ -1,19 +1,19 @@
 import React from "react"
-import Layout from "../components/layout"
+import Example from "../components/example"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
-import { Link } from "gatsby"
 import ImgGrid from "../components/imgGrid"
 import SectionContent from "../components/sectionContent"
 import Header from "../components/header"
 
-import boxStyles from "../components/box.module.css"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
 import redKing from "../images/red/red_king.jpg"
 import blueQueen from "../images/blue/blue_queen.jpg"
+
+import DatePicker from "react-datepicker";
  
-import layoutStyles from "../components/layout.module.css"
+import "react-datepicker/dist/react-datepicker.css";
 
 const bg = {
     backgroundImage: "url(" + redKing + ")",
@@ -26,10 +26,17 @@ const bg = {
   }
 
 const redPage = () => {
+
+
     return (
         <div>
         <Header />
+      
         <Hero style ={bg} />
+        <div className={flexboxGrid.datepicker}>
+         <Example />
+         
+        </div>
         <SectionContent heading = "PASSION RED ROOM" />
         <ImgGrid />
         <Footer />
