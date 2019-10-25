@@ -6,6 +6,7 @@ import ImgGrid from "../components/imgGrid"
 import SectionContent from "../components/sectionContent"
 import Header from "../components/header"
 import Art from "../components/art"
+import Rooms from "../data/rooms"
 
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
@@ -26,6 +27,7 @@ const bg = {
     overflow: "hidden",
   }
 
+
 const redPage = () => {
 
 
@@ -33,13 +35,13 @@ const redPage = () => {
         <div>
         <Header />
       
-        <Hero style ={bg} title= "Passion Red"  />
+        <Hero style ={bg} title= {Rooms.colors.red}  />
         <div className={flexboxGrid.datepicker}>
           <div className={flexboxGrid.dateContainer}><Example /></div>
           <div className={flexboxGrid.dateContainer}><Example /></div>
       
         </div>
-        <SectionContent heading = "PASSION RED ROOM" />
+        <SectionContent heading = {Rooms.colors.red} />
         <ImgGrid />
         <Footer />
       </div>
