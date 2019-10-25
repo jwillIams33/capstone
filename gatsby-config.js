@@ -10,6 +10,5 @@ module.exports = {
   siteMetadata: {
     title: 'Capstone',
     author: 'Jamal Williams'
-  },
-  plugins: [`gatsby-plugin-react-helmet`]
+  }
 }
