@@ -23,7 +23,7 @@
 }
 
 .dateContainer {
-  padding: 15px;
+margin: 0;
 }
 
 input {
@@ -39,6 +39,7 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    color: white;
   }
 
   .hero {

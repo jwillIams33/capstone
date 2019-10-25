@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import DatePicker from "react-datepicker"
 import flexboxGrid from "./flexboxGrid.module.css"
+import Column from "./column"
+
 
 import "react-datepicker/dist/react-datepicker.css"
 
@@ -10,11 +12,14 @@ import "react-datepicker/dist/react-datepicker.css"
 const Example = () => {
   const [startDate, setStartDate] = useState(null)
   return (
-    <DatePicker 
+    <Column>
+                <DatePicker 
     selected={startDate} 
     onChange={date => setStartDate(date)}
     placeholderText="mm/dd/yyyy"
      />
+    </Column>
+   
   )
 }
 

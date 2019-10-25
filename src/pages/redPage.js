@@ -13,7 +13,9 @@ import flexboxGrid from "../components/flexboxGrid.module.css"
 import redKing from "../images/red/red_king.jpg"
 import blueQueen from "../images/blue/blue_queen.jpg"
 
-import DatePicker from "react-datepicker";
+import DatePicker from "react-datepicker"
+
+import Booking from "../components/booking"
  
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -36,9 +38,27 @@ const redPage = () => {
         <Header />
       
         <Hero style ={bg} title= {Rooms.colors.red}  />
+        {/* <Booking /> */}
         <div className={flexboxGrid.datepicker}>
+          <div className={flexboxGrid.dateContainer}>
+            {/* <p>Check-In</p> */}
+            <Example />
+          </div>
           <div className={flexboxGrid.dateContainer}><Example /></div>
-          <div className={flexboxGrid.dateContainer}><Example /></div>
+          <div className={flexboxGrid.dateContainer}>
+            <select>
+  <option value="volvo">1 Guest</option>
+  <option value="saab">2 Guests</option>
+  <option value="opel">3 Guests</option>
+  <option value="audi">4 Guests</option>
+</select>
+<select>
+  <option value="volvo">1 Room</option>
+  <option value="saab">2 Rooms</option>
+  <option value="opel">3 Rooms</option>
+  <option value="audi">4 Rooms</option>
+</select>
+</div>
       
         </div>
         <SectionContent heading = {Rooms.colors.red} />
