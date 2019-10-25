@@ -10,6 +10,7 @@ import Rooms from "../data/rooms"
 import Row from "../components/row"
 import Column from "../components/column"
 import Wrapper from "../components/wrapper"
+import OptionList from "../components/select"
 
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
@@ -32,6 +33,9 @@ const bg = {
   overflow: "hidden",
 }
 
+const guests = ["1 guest", "2 guests", "3 guests", "4 guests"]
+const rooms = ["1 room", "2 rooms", "3 rooms", "4 rooms"]
+
 const redPage = () => {
   return (
     <div>
@@ -43,44 +47,9 @@ const redPage = () => {
         <Row>
           <ChooseDate label="Check-In" />
           <ChooseDate label="Check-Out" />
-          <ChooseDate label="Check-In" />
-          <ChooseDate label="Check-Out" />
-          <ChooseDate label="Check-Out" />
+          <OptionList label="Guests" options={guests} />
+          <OptionList label="Rooms" options={rooms} />
         </Row>
-
-        {/* <div className={flexboxGrid.dateContainer}>
-          <Row>
-            <label for="pet-select">Guests</label>
-          </Row>
-
-          <select name="pets" className={flexboxGrid.guests}>
-            <option value="">1 Guest</option>
-            <option value="dog">2 Guests</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
-          </select>
-        </div>
-        <div className={flexboxGrid.dateContainer}>
-          <Row>
-            <label for="pet-select">Rooms</label>
-          </Row>
-
-          <select name="pets" className={flexboxGrid.guests}>
-            <option value="">1 Room</option>
-            <option value="dog">2 Rooms</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
-          </select>
-        </div>
-        <div className={flexboxGrid.dateContainer}>
-          <button>Check Availability</button>
-        </div> */}
       </Wrapper>
 
       <SectionContent heading={Rooms.colors.red} />
