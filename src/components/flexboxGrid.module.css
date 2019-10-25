@@ -7,8 +7,10 @@
 .hero {
   line-height: 300px;
   overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+
 
 }
 
@@ -40,7 +42,8 @@ input {
   }
 
   .hero {
-    line-height: 600px;
+    min-height: 660px;
+    font-size: 3rem;
   }
 
   .column {
@@ -96,7 +99,7 @@ body {
 
 @media screen and (min-width: 1000px){
   .hero {
-   line-height: 800px;
+   line-height: 660px;
   }
 }
 
@@ -132,7 +135,7 @@ h2 {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

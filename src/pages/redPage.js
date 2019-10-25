@@ -5,6 +5,7 @@ import Hero from "../components/hero"
 import ImgGrid from "../components/imgGrid"
 import SectionContent from "../components/sectionContent"
 import Header from "../components/header"
+import Art from "../components/art"
 
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
@@ -16,7 +17,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const bg = {
-    backgroundImage: "url(" + redKing + ")",
+    backgroundImage: "url(" + Art.passionRed + ")",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -32,7 +33,7 @@ const redPage = () => {
         <div>
         <Header />
       
-        <Hero style ={bg} />
+        <Hero style ={bg} title= "Passion Red"  />
         <div className={flexboxGrid.datepicker}>
           <div className={flexboxGrid.dateContainer}><Example /></div>
           <div className={flexboxGrid.dateContainer}><Example /></div>
