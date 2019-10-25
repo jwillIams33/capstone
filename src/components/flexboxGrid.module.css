@@ -14,7 +14,7 @@
 
 }
 
-.datepicker {
+.booking {
   height: 100px;
   width: 100%;
   border: 1px solid #333333;
@@ -33,6 +33,12 @@ input {
 
 }
 
+.guests {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #AAA;
+}
 
 @media screen and (min-width: 800px) {
   .row {
@@ -40,6 +46,7 @@ input {
     flex-direction: row;
     flex-wrap: nowrap;
     color: white;
+    justify-content: space-evenly;
   }
 
   .hero {
@@ -136,7 +143,7 @@ h2 {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
