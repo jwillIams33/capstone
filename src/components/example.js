@@ -5,6 +5,7 @@ import Column from "./column"
 import Row from "./row"
 
 import "react-datepicker/dist/react-datepicker.css"
+import { subDays } from "date-fns"
 
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -20,6 +21,8 @@ const ChooseDate = props => {
         selected={startDate}
         onChange={date => setStartDate(date)}
         placeholderText="mm/dd/yyyy"
+        minDate ={subDays(new Date(), 0)}
+        className = {flexboxGrid.custom}
       />
     </div>
   )
