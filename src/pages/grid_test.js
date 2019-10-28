@@ -1,33 +1,11 @@
 import React from "react"
 import gridTest from "./newgrid.module.css"
+import ResponsiveHeader from "../components/example-2"
 
 const greenPage = () => {
-  return (
-    <div className={gridTest.container}>
-      <div className={gridTest.gridRow}>
-        <div className={gridTest.gridItem}>
-          <div className={gridTest.gridItemWrapper}>
-            <div className={gridTest.gridItemContainer}></div>
-          </div>
-        </div>
-        <div className={gridTest.gridItem}>
-          <div className={gridTest.gridItemWrapper}>
-            <div className={gridTest.gridItemContainer}></div>
-          </div>
-        </div>
 
-        <div className={gridTest.gridItem}>
-          <div className={gridTest.gridItemWrapper}>
-            <div className={gridTest.gridItemContainer}></div>
-          </div>
-        </div>
-        <div className={gridTest.gridItem}>
-          <div className={gridTest.gridItemWrapper}>
-            <div className={gridTest.gridItemContainer}></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  return (
+   <ResponsiveHeader />
   )
 }
 

@@ -1,7 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+.main {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  /* max-width:1200px;
+  margin: 0 auto; */
+}
+
+.item {
+background-color:#aaa;
+flex-basis: 100%;
+padding:20px;
+margin:3px;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width:600px){
+  .main {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 body {
-  color: #000;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
