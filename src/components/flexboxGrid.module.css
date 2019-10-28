@@ -100,8 +100,8 @@ body {
   margin-bottom: 70px;
 }
 
-.react-datepicker__week {
-  background-color: red;
+.custom {
+  background-color: aqua;
 }
 
 .column {
