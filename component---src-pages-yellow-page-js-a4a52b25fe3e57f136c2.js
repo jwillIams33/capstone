@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{191:function(n,e,o){"use strict";o.r(e);var t=o(0),a=o.n(t);e.default=function(){return a.a.createElement("div",null,"Happiness Yellow Room")}}}]);
+//# sourceMappingURL=component---src-pages-yellow-page-js-a4a52b25fe3e57f136c2.js.map
