@@ -16,13 +16,14 @@ const ResponsiveHeader= (props) => {
             <div className={gridTest.item}>child</div>
             <div className={gridTest.item}>child</div> 
         </header>
+        <button className={gridTest.menu} onClick ={() => toggleMenu(showMenu => !showMenu)}>Menu</button>
         {showMenu && <header className={gridTest.mobile}>
             <div className={gridTest.item}>child</div>
             <div className={gridTest.item}>child</div>
             <div className={gridTest.item}>child</div>
             <div className={gridTest.item}>child</div> 
         </header>}
-        <button className={gridTest.menu} onClick ={() => toggleMenu(showMenu => !showMenu)}>click me</button>
+        <div>Stuff</div>
       </div>
     )
   }
