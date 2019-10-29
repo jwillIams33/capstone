@@ -10,5 +10,7 @@ module.exports = {
   siteMetadata: {
     title: 'Capstone',
     author: 'Jamal Williams'
-  }
+  },
+  pathPrefix: "/capstone"
+
 }
