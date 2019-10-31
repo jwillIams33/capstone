@@ -4,27 +4,26 @@ import gridTest from "../pages/newgrid.module.css"
 const ResponsiveHeader= (props) => {
 
    
-    const [showMenu, toggleMenu] = useState(false)
+    const [isToggled, setToggle] = useState(false);
+
+    let itemsClass= gridTest.items;
+
+    if(isToggled) {
+      itemsClass +='is-toggled';
+    }
 
    
 
     return (
-      <div>
-        <header className={gridTest.main}>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div> 
+      <>
+        <header className={itemsClass}>
+          <div className = {gridTest.child}>Child</div>
+          <div className = {gridTest.child}>Child</div>
+          <div className = {gridTest.child}>Child</div>
+          <div className = {gridTest.child}>Child</div>
         </header>
-        <button className={gridTest.menu} onClick ={() => toggleMenu(showMenu => !showMenu)}>Menu</button>
-        {showMenu && <header className={gridTest.mobile}>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div> 
-        </header>}
-        <div>Stuff</div>
-      </div>
+        <button onClick = {() => setToggle(!isToggled)} className={gridTest.menu}>Menu</button>
+      </>
     )
   }
 
