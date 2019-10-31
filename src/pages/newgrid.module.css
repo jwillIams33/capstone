@@ -1,46 +1,87 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+button {
+  padding: 5px 20px;
+  margin-left: 30px;
+  color: white;
+  background-color:rgba(0,0,0,0);
+  border: none;
+}
+
+ul {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.logo {
+display: none;
+}
 
 .items {
   display: flex;
   flex-direction: row;
+  list-style: none;
+  margin: 0 !important;
+  text-align: center;
+  flex-basis: 100%;
+  justify-content: space-between;
 }
 
-
 .child {
-background-color:#aaa;
+margin-left:1.3rem;
 flex-basis: 100%;
-padding:20px;
-margin:3px;
+list-style-type: none;
+padding: 10px;
 }
 
 .menu {
   display: none;
 }
 
-.mobile {
-  display: none;
-  text-align: center;
-}
-
-.hide {
-  display: none;
-}
-.show {
-  display: flex;
-  flex-direction: column;
-}
-
 @media(max-width:600px){
- .items {
+ .nav {
    display: none;
+   margin: 0 !important;
  }
- .items.is-toggled {
+ .nav.is-toggled {
    display: block;
  }
  .menu {
    display: block;
  }
+ .items {
+   flex-basis: 100%;
+   flex-direction: column;
+ }
+ .logo2 {
+   display: none;
+ }
+ .logo {
+   display: block;
+ }
+ .child {
+   margin-left: 0 !important;
+ }
+
 }
 
 
