@@ -1,31 +1,27 @@
 import React, { useState } from "react"
 import gridTest from "../pages/newgrid.module.css"
 
-const ResponsiveHeader= (props) => {
+const ResponsiveHeader = props => {
+  const [isToggled, setToggle] = useState(false)
 
-   
-    const [showMenu, toggleMenu] = useState(false)
+  let itemsClass = gridTest.items;
 
-   
-
-    return (
-      <div>
-        <header className={gridTest.main}>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div> 
-        </header>
-        <button className={gridTest.menu} onClick ={() => toggleMenu(showMenu => !showMenu)}>Menu</button>
-        {showMenu && <header className={gridTest.mobile}>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div>
-            <div className={gridTest.item}>child</div> 
-        </header>}
-        <div>Stuff</div>
-      </div>
-    )
+  if (isToggled) {
+    itemsClass += "is-toggled";
   }
 
-  export default ResponsiveHeader
+  return (
+    <>
+      <button onClick={() => setToggle(!isToggled)} className={gridTest.menu}>
+        Menu
+      </button>
+      <header className={itemsClass}>
+        <div className={gridTest.child}>child</div>
+        <div className={gridTest.child}>child</div>
+        <div className={gridTest.child}>child</div>
+      </header>
+    </>
+  )
+}
+
+export default ResponsiveHeader

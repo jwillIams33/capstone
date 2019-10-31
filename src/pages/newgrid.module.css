@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-.main {
+
+.items {
   display: flex;
   flex-direction: row;
-  color: white;
-  /* max-width:1200px;
-  margin: 0 auto; */
 }
 
-.item {
+
+.child {
 background-color:#aaa;
 flex-basis: 100%;
 padding:20px;
@@ -33,16 +32,15 @@ margin:3px;
 }
 
 @media(max-width:600px){
-  .main {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
-  .mobile {
-    display: flex;
-    flex-direction: column;
-  }
+ .items {
+   display: none;
+ }
+ .items.is-toggled {
+   display: block;
+ }
+ .menu {
+   display: block;
+ }
 }
 
 
