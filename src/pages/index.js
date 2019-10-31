@@ -8,10 +8,15 @@ import Img from "../components/img"
 import yellowKing from "../images/yellow/yellow-3.jpg"
 import redKing from "../images/red/red_king.jpg"
  
+const redKingImg = "url(" + redKing + ")";
+
+const Images = {
+  yellowKing : "url(" + yellowKing + ")"
+}
 
 
 const bg = {
-    backgroundImage: "url(" + redKing + ")",
+    backgroundImage: redKingImg,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -21,7 +26,7 @@ const bg = {
   }
 
   const bg3 = {
-    backgroundImage: "url(" + yellowKing + ")",
+    backgroundImage: Images.yellowKing,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",

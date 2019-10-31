@@ -1,15 +1,4 @@
 
-header {
-  display: flex;
-
-  color: white;
-}
-
-.item {
-background-color:#aaa;
-width: 100px;
-height: 100px;
-}
 
 
 /* Grid */
@@ -120,7 +109,7 @@ body {
 }
 
 .custom {
-  background-color: aqua;
+  
 }
 
 .column {
