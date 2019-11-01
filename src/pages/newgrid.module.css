@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-button {
+/* button {
   padding: 5px 20px;
   margin-left: 30px;
   color: white;
   background-color:rgba(0,0,0,0);
   border: none;
-}
+} */
 
 ul {
   margin: 0;
@@ -18,12 +18,17 @@ h2 {
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  margin: 0 !important;
+  top:0;
+  right:0;
+  /* display: inline-block; */
+  /* flex-direction: row; */
+  margin: 0;
 
 }
 
+.nav > * {
+  display: inline-block;
+}
 
 .row {
   display: flex;
@@ -32,15 +37,15 @@ h2 {
 }
 
 
-.logo {
+/* .logo {
 display: none;
-}
+} */
 
 .items {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 0 !important;
+  margin: 0;
   text-align: center;
   flex-basis: 100%;
   justify-content: space-between;
@@ -53,31 +58,36 @@ list-style-type: none;
 padding: 10px;
 }
 
-.menu {
+/* .menu {
   display: none;
-}
+} */
 
 @media(max-width:600px){
  .nav {
    display: none;
    margin: 0 !important;
+   
  }
  .nav.is-toggled {
    display: block;
+   position: absolute;
+   right: 0;
+   z-index: 5;
  }
  .menu {
    display: block;
  }
  .items {
-   flex-basis: 100%;
-   flex-direction: column;
+   /* flex-basis: 100%;
+   flex-direction: column; */
  }
- .logo2 {
+ /* .logo2 {
    display: none;
- }
- .logo {
+ } */
+ /* .logo {
    display: block;
- }
+   color:green;
+ } */
  .child {
    margin-left: 0 !important;
  }
