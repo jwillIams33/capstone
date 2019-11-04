@@ -12,6 +12,8 @@ import Row from "../components/row"
 import Column from "../components/column"
 import Wrapper from "../components/wrapper"
 import OptionList from "../components/select"
+import GuestPicker from "../components/guestPicker"
+import RoomPicker from "../components/roomPicker"
 
 import flexboxGrid from "../components/flexboxGrid.module.css"
 
@@ -34,8 +36,8 @@ const bg = {
   overflow: "hidden",
 }
 
-const guestOptions = ["1 guest", "2 guests", "3 guests", "4 guests"]
-const roomOptions = ["1 room", "2 rooms", "3 rooms", "4 rooms"]
+const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
+const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
 
 const redPage = () => {
   return (
@@ -48,9 +50,8 @@ const redPage = () => {
         <Row>
           <ChooseDate label="Check-In" />
           <CheckOutDatePicker label="Check Out" />
-          {/* <ChooseDate label="Check-Out" /> */}
-          <OptionList label="Guests" options={guestOptions} />
-          <OptionList label="Rooms" options={roomOptions} />
+          <GuestPicker label="Guests" options={guestOptions} />
+          <RoomPicker label="Rooms" options={roomOptions} />
         </Row>
       </Wrapper>
 
