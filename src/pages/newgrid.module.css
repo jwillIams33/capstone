@@ -65,14 +65,13 @@ padding: 10px;
 @media(max-width:600px){
  .nav {
    display: none;
-   margin: 0 !important;
+   margin: 0;
    
  }
  .nav.is-toggled {
    display: block;
    position: absolute;
    right: 0;
-   z-index: 5;
  }
  .menu {
    display: block;

@@ -36,12 +36,14 @@ const ResponsiveHeader = props => {
           >
             {menu}
           </button>
-          <ul className={nav}>
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
-          </ul>
+          <nav>
+            <ul className={nav}>
+              <li className={gridTest.child}>Child</li>
+              <li className={gridTest.child}>Child</li>
+              <li className={gridTest.child}>Child</li>
+              <li className={gridTest.child}>Child</li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main>

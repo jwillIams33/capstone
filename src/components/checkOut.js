@@ -9,20 +9,24 @@ import { subDays } from "date-fns"
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-const ChooseDate = props => {
-  const [startDate, setStartDate] = useState(new Date())
+const today = new Date()
+const tomorrow = new Date(today)
+tomorrow.setDate(tomorrow.getDate() + 1)
 
-  function getFormattedDate(date) {
+const CheckOutDatePicker = props => {
+  const [endDate, setEndDate] = useState(tomorrow)
+
+  function formatDate(date) {
     let formattedDate = date.toDateString()
 
     return formattedDate
   }
 
-  const formattedDate = getFormattedDate(startDate)
+  const formattedDate = formatDate(endDate)
 
-  localStorage.setItem("CheckInDate", formattedDate)
+  localStorage.setItem("CheckOutDate", formattedDate)
 
-  const checkInDate = localStorage.getItem("CheckInDate")
+  const checkOutDate = localStorage.getItem("CheckOutDate")
 
   return (
     <div>
@@ -30,15 +34,18 @@ const ChooseDate = props => {
         <label>{props.label}</label>
       </Row>
       <DatePicker
-        selected={startDate}
-        onChange={date => setStartDate(date)}
+        selected={endDate}
+        onChange={date => setEndDate(date)}
         placeholderText="mm/dd/yyyy"
         minDate={subDays(new Date(), 0)}
         className={flexboxGrid.custom}
       />
-      <p><b>Check-In:</b> {checkInDate}</p>
+      <p>
+        <b>Check-Out:</b>
+        {checkOutDate}
+      </p>
     </div>
   )
 }
 
-export default ChooseDate
+export default CheckOutDatePicker

@@ -1,5 +1,6 @@
 import React from "react"
 import ChooseDate from "../components/example"
+import CheckOutDatePicker from "../components/checkOut"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import ImgGrid from "../components/imgGrid"
@@ -33,8 +34,8 @@ const bg = {
   overflow: "hidden",
 }
 
-const guests = ["1 guest", "2 guests", "3 guests", "4 guests"]
-const rooms = ["1 room", "2 rooms", "3 rooms", "4 rooms"]
+const guestOptions = ["1 guest", "2 guests", "3 guests", "4 guests"]
+const roomOptions = ["1 room", "2 rooms", "3 rooms", "4 rooms"]
 
 const redPage = () => {
   return (
@@ -46,9 +47,10 @@ const redPage = () => {
       <Wrapper>
         <Row>
           <ChooseDate label="Check-In" />
-          <ChooseDate label="Check-Out" />
-          <OptionList label="Guests" options={guests} />
-          <OptionList label="Rooms" options={rooms} />
+          <CheckOutDatePicker label="Check Out" />
+          {/* <ChooseDate label="Check-Out" /> */}
+          <OptionList label="Guests" options={guestOptions} />
+          <OptionList label="Rooms" options={roomOptions} />
         </Row>
       </Wrapper>
 
