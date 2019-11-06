@@ -9,20 +9,9 @@ import Header from "../components/header"
 import Art from "../components/art"
 import Rooms from "../data/rooms"
 import Row from "../components/row"
-import Column from "../components/column"
 import Wrapper from "../components/wrapper"
-import OptionList from "../components/select"
 import GuestPicker from "../components/guestPicker"
 import RoomPicker from "../components/roomPicker"
-
-import flexboxGrid from "../components/flexboxGrid.module.css"
-
-import redKing from "../images/red/red_king.jpg"
-import blueQueen from "../images/blue/blue_queen.jpg"
-
-import DatePicker from "react-datepicker"
-
-import Booking from "../components/booking"
 
 import "react-datepicker/dist/react-datepicker.css"
 

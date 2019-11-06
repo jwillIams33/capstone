@@ -1,5 +1,3 @@
-
-
 const storage = {
     get: (key) => {
         if(typeof window !== "undefined"){
