@@ -1,12 +1,13 @@
 import React from "react"
 import gridTest from "./newgrid.module.css"
 import ResponsiveHeader from "../components/example-2"
+import storage from "../components/storage"
 
-const checkInDate = localStorage.getItem("CheckInDate")
-const checkOutDate = localStorage.getItem("CheckOutDate")
-const rooms = localStorage.getItem("numberOfRooms")
+const checkInDate = storage.get("checkInDate")
+const checkOutDate = storage.get("checkOutDate")
+const rooms = storage.get("numberOfRooms")
 
-const guests = localStorage.getItem("numberOfGuests")
+const guests = storage.get("numberOfGuests")
 
 const greenPage = () => {
   return (

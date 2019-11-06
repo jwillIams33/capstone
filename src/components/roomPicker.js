@@ -1,13 +1,21 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Row from "./row"
 import ListItem from "./listItem"
+import storage from "./storage"
+
+// const storage = (localStorage) ? localStorage: {};
 
 const RoomPicker = props => {
   const [numberOfRooms, setNumberOfRooms] = useState("1 Room")
 
-  localStorage.setItem("numberOfRooms", numberOfRooms)
+//   React.useEffect(() => {
+//     localStorage.setItem('numberOfRooms', numberOfRooms);
+//   }, [numberOfRooms]);
 
-  const rooms = localStorage.getItem("numberOfRooms");
+storage.set("numberOfRooms", numberOfRooms)
+
+const rooms = storage.get("numberOfRooms")
+
 
   const options = props.options
   const listItems = options.map(option => (

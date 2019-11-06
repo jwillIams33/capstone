@@ -1,13 +1,18 @@
 import React, { useState } from "react"
 import Row from "./row"
 import ListItem from "./listItem"
+import storage from "./storage"
 
 const GuestPicker = props => {
   const [numberOfGuests, setNumberOfGuests] = useState("1 Guest")
 
-  localStorage.setItem("numberOfGuests", numberOfGuests)
+  storage.set("numberOfGuests", numberOfGuests)
 
-  const guests = localStorage.getItem("numberOfGuests");
+  const guests = storage.get("numberOfGuests")
+
+//   localStorage.setItem("numberOfGuests", numberOfGuests)
+
+//   const guests = localStorage.getItem("numberOfGuests");
 
   const options = props.options
   const listItems = options.map(option => (

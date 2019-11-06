@@ -3,6 +3,8 @@ import DatePicker from "react-datepicker"
 import flexboxGrid from "./flexboxGrid.module.css"
 import Row from "./row"
 
+import storage from "./storage"
+
 import "react-datepicker/dist/react-datepicker.css"
 import { subDays } from "date-fns"
 
@@ -10,7 +12,7 @@ import { subDays } from "date-fns"
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 const ChooseDate = props => {
-  const [startDate, setStartDate] = useState(new Date())
+  const [checkInDate, setCheckInDate] = useState(new Date())
 
   function getFormattedDate(date) {
     let formattedDate = date.toDateString()
@@ -18,11 +20,16 @@ const ChooseDate = props => {
     return formattedDate
   }
 
-  const formattedDate = getFormattedDate(startDate)
+  const formattedDate = getFormattedDate(checkInDate)
 
-  localStorage.setItem("CheckInDate", formattedDate)
 
-  const checkInDate = localStorage.getItem("CheckInDate")
+  storage.set("checkInDate", formattedDate)
+
+  const checkIn = storage.get("checkInDate")
+
+  // localStorage.setItem("CheckInDate", formattedDate)
+
+  // const checkInDate = localStorage.getItem("CheckInDate")
 
   return (
     <div>
@@ -30,13 +37,13 @@ const ChooseDate = props => {
         <label>{props.label}</label>
       </Row>
       <DatePicker
-        selected={startDate}
-        onChange={date => setStartDate(date)}
+        selected={checkInDate}
+        onChange={date => setCheckInDate(date)}
         placeholderText="mm/dd/yyyy"
         minDate={subDays(new Date(), 0)}
         className={flexboxGrid.custom}
       />
-      <p><b>Check-In:</b> {checkInDate}</p>
+      <p><b>Check-In:</b> {checkIn}</p>
     </div>
   )
 }
