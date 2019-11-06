@@ -6,54 +6,20 @@ import ImgContainer from './imgContainer'
 import { Link } from "gatsby"
 import flexboxGrid from './flexboxGrid.module.css'
 
+import GridItemInfo from './gridItemInfo'
+import red from '../images/pageData'
+
 import redKing from "../images/red/red_king.jpg"
 import blueQueen from "../images/blue/blue-1.jpg"
 import yellowKing from "../images/yellow/yellow-3.jpg"
 import greenKing from "../images/green/green-8.jpg"
 
+
 import '../styles/index.css'
 
 
 
-const bg = {
-    backgroundImage: "url(" + redKing + ")",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "100%",
-    height: "100%",
-    overflow: "hidden",
-  }
-  
-  const bg2 = {
-    backgroundImage: "url(" + blueQueen + ")",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "100%",
-    height: "100%",
-    overflow: "hidden",
-  }
 
-  const bg3 = {
-    backgroundImage: "url(" + yellowKing + ")",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "100%",
-    height: "100%",
-    overflow: "hidden",
-  }
-
-  const bg4 = {
-    backgroundImage: "url(" + greenKing+ ")",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "100%",
-    height: "100%",
-    overflow: "hidden",
-  }
 
   function imgGen(img){
     let bg = {
@@ -70,38 +36,56 @@ const bg = {
 
 
 
-const ImgGrid = () => {
+const RoomGrid = () => {
 
     return (
        <Wrapper>
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={bg}><Link className={flexboxGrid.linkStyles} to="/redPage">
+                        <div style={imgGen(red.queen)}><Link className={flexboxGrid.linkStyles} to="/redPage">
                   red room
                 </Link></div>
                     </ImgContainer>
+                    <GridItemInfo type="Queen Room" price="$130.00"/>   
                </Column>
                <Column>
                     <ImgContainer>
-                        <div style={bg2}></div>
+                        <div style={imgGen(red.king)}></div>
                     </ImgContainer>
+                    <GridItemInfo type="King Room" price="$130.00"/>  
                </Column>
            </Row>
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={bg3}></div>
+                        <div style={imgGen(red.double)}></div>
                     </ImgContainer>
+                    <GridItemInfo type="Double Queen" price="$130.00"/>  
                </Column>
                <Column>
                     <ImgContainer>
-                        <div style={bg4}></div>
+                        <div style={imgGen(red.bunk)}></div>
                     </ImgContainer>
+                    <GridItemInfo type="Double Bunk" price="$130.00"/>  
+               </Column>
+           </Row>
+           <Row>
+               <Column>
+                    <ImgContainer>
+                        <div style={imgGen(red.loft)}></div>
+                    </ImgContainer>
+                    <GridItemInfo type="Loft" price="$130.00"/>  
+               </Column>
+               <Column>
+                    <ImgContainer>
+                        <div style={imgGen(red.suite)}></div>
+                    </ImgContainer>
+                    <GridItemInfo type="Suite" price="$130.00"/>  
                </Column>
            </Row>
        </Wrapper>
     )
 }
 
-export default ImgGrid
+export default RoomGrid

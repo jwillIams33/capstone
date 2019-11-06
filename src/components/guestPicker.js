@@ -7,10 +7,9 @@ const GuestPicker = props => {
   const [numberOfGuests, setNumberOfGuests] = useState("1 Guest")
 
   storage.set("numberOfGuests", numberOfGuests)
-
-  const guests = storage.get("numberOfGuests")
-
+  
   const options = props.options
+  
   const listItems = options.map(option => (
     <ListItem key={option.toString()} value={option.toString()} />
   ))

@@ -43,7 +43,6 @@ const ChooseDate = props => {
         minDate={subDays(new Date(), 0)}
         className={flexboxGrid.custom}
       />
-      <p><b>Check-In:</b> {checkIn}</p>
     </div>
   )
 }

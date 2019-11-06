@@ -29,7 +29,6 @@ const rooms = storage.get("numberOfRooms")
       <select onChange={event => setNumberOfRooms(event.target.value)}>
         {listItems}
       </select>
-      <p>{rooms}</p>
     </div>
   )
 }

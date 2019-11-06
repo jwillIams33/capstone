@@ -16,11 +16,6 @@ const SectionContent = (props) => {
           </div>
         </div>
       </div>
-      <div className={flexboxGrid.row}>
-        <div className={flexboxGrid.column}>
-          <h2>CHOOSE YOUR COLOR</h2>
-        </div>
-      </div>
     </div>
   )
 }

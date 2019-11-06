@@ -73,9 +73,6 @@ const CheckOutDatePicker = props => {
         minDate={subDays(new Date(), 0)}
         className={flexboxGrid.custom}
       />
-      <p>
-       {checkOut}
-      </p>
     </div>
   )
 }

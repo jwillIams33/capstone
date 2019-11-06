@@ -13,42 +13,52 @@ import Wrapper from "../components/wrapper"
 import GuestPicker from "../components/guestPicker"
 import RoomPicker from "../components/roomPicker"
 
+import storage from "../components/storage"
+
+
+import red from '../images/pageData'
+
 import "react-datepicker/dist/react-datepicker.css"
 
-const bg = {
-  backgroundImage: "url(" + Art.passionRed + ")",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  width: "100%",
-  height: "100%",
-  overflow: "hidden",
-}
+function imgGen(img){
+    let bg = {
+      backgroundImage: "url(" + img + ")",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      width: "100%",
+      height: "100%",
+      overflow: "hidden",
+    }
+    return bg
+  }
+
+  const checkInDate = storage.get("checkInDate")
+const checkOutDate = storage.get("checkOutDate")
+const rooms = storage.get("numberOfRooms")
+
+const guests = storage.get("numberOfGuests")
 
 const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
 const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
 
-const redPage = () => {
+const queenRoom = () => {
   return (
     <div>
       <Header />
 
-      <Hero style={bg} title={Rooms.colors.red} />
+      <Hero style={imgGen(red.queen)} title={Rooms.colors.red} />
 
       <Wrapper>
-        <Row>
-          <ChooseDate label="Check-In" />
-          <CheckOutDatePicker label="Check Out" />
-          <GuestPicker label="Guests" options={guestOptions} />
-          <RoomPicker label="Rooms" options={roomOptions} />
-        </Row>
+          <Row>
+              <p>CHECK-IN: {checkInDate}</p><p>CHECK OUT: {checkOutDate}</p><p>GUESTS: {guests}</p><p>ROOMS: {rooms}</p>
+          </Row>
       </Wrapper>
-
-      <SectionContent heading={Rooms.colors.red} />
-      <RoomGrid />
+        <h1>Queen Room</h1>
+        <section>Content</section>
       <Footer />
     </div>
   )
 }
 
-export default redPage
+export default queenRoom
