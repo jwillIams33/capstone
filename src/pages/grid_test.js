@@ -1,7 +1,9 @@
 import React from "react"
 import gridTest from "./newgrid.module.css"
 import ResponsiveHeader from "../components/example-2"
+
 import storage from "../components/storage"
+
 
 const checkInDate = storage.get("checkInDate")
 const checkOutDate = storage.get("checkOutDate")
