@@ -10,10 +10,6 @@ const GuestPicker = props => {
 
   const guests = storage.get("numberOfGuests")
 
-//   localStorage.setItem("numberOfGuests", numberOfGuests)
-
-//   const guests = localStorage.getItem("numberOfGuests");
-
   const options = props.options
   const listItems = options.map(option => (
     <ListItem key={option.toString()} value={option.toString()} />
@@ -26,7 +22,6 @@ const GuestPicker = props => {
       <select onChange={event => setNumberOfGuests(event.target.value)}>
         {listItems}
       </select>
-      <p>{guests}</p>
     </div>
   )
 }
