@@ -27,10 +27,6 @@ const ChooseDate = props => {
 
   const checkIn = storage.get("checkInDate")
 
-  // localStorage.setItem("CheckInDate", formattedDate)
-
-  // const checkInDate = localStorage.getItem("CheckInDate")
-
   return (
     <div>
       <Row>

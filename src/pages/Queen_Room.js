@@ -1,17 +1,10 @@
 import React from "react"
-import ChooseDate from "../components/example"
-import CheckOutDatePicker from "../components/checkOut"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
-import RoomGrid from "../components/RoomGrid"
-import SectionContent from "../components/sectionContent"
 import Header from "../components/header"
-import Art from "../components/art"
 import Rooms from "../data/rooms"
 import Row from "../components/row"
 import Wrapper from "../components/wrapper"
-import GuestPicker from "../components/guestPicker"
-import RoomPicker from "../components/roomPicker"
 
 import storage from "../components/storage"
 
@@ -33,14 +26,12 @@ function imgGen(img){
     return bg
   }
 
-  const checkInDate = storage.get("checkInDate")
+const checkInDate = storage.get("checkInDate")
 const checkOutDate = storage.get("checkOutDate")
 const rooms = storage.get("numberOfRooms")
 
 const guests = storage.get("numberOfGuests")
 
-const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
-const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
 
 const queenRoom = () => {
   return (
