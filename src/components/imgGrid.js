@@ -8,7 +8,7 @@ import flexboxGrid from './flexboxGrid.module.css'
 
 import redKing from "../images/red/red_king.jpg"
 import blueQueen from "../images/blue/blue-1.jpg"
-import yellowKing from "../images/yellow/yellow-3.jpg"
+import yellowKing from "../images/yellow/yellow-king.jpg"
 import greenKing from "../images/green/green-8.jpg"
 
 import '../styles/index.css'

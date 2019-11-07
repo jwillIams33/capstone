@@ -5,7 +5,7 @@ import ImgGrid from "../components/imgGrid"
 import SectionContent from "../components/sectionContent"
 import Header from "../components/header"
 import Img from "../components/img"
-import yellowKing from "../images/yellow/yellow-3.jpg"
+import yellowKing from "../images/yellow/yellow-king.jpg"
 import redKing from "../images/red/red_king.jpg"
  
 const redKingImg = "url(" + redKing + ")";
