@@ -1,10 +1,22 @@
 
+body {
+  color: white;
+}
+
+.content {
+  text-align: left !important;
+}
+
 .roomInfo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: start;
   font-size: 1.5rem;
+}
+
+.roomDetail {
+  padding-top: 3rem;
 }
 
 /* Grid */
@@ -137,10 +149,6 @@ body {
 }
 
 
-h1,
-h2 {
-  text-align: center;
-}
 
 
 .nav-list {
@@ -170,7 +178,10 @@ h2 {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  color: #ffffff;
 }
+
+
 
 .linkStyles {
   display: block;

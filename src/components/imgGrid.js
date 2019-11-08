@@ -77,7 +77,7 @@ const ImgGrid = () => {
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={bg}><Link className={flexboxGrid.linkStyles} to="/redPage">
+                        <div style={bg}><Link className={flexboxGrid.linkStyles} to="/Passion_Red">
                   red room
                 </Link></div>
                     </ImgContainer>

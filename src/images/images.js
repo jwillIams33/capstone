@@ -1,3 +1,4 @@
+
 import redKing from "./red/red_king.jpg"
 import redLoft from "./red/red_loft.jpg"
 import redQueen from "./red/red_queen.jpg"
@@ -12,7 +13,6 @@ import greenSuite from "./green/green_suite.jpg"
 import greenBunk from "./green/green-6.jpg"
 import greenLoft from "./green/green-loft.jpg"
 import greenQueen from "./green/green_queen.jpg"
-
 
 import yellowQueen from "./yellow/yellow-queen-2.jpg"
 import yellowKing from "./yellow/yellow-king.jpg"
@@ -29,41 +29,42 @@ import blueking from "./blue/blue_king.jpg"
 import blueGrandSuite from "./blue/1-bedroom-Grand-King-Suite-Blue.jpg"
 
 
-const red = {
+
+
+const img = {
+  red: {
     queen: redQueen,
     king: redKing,
     double: redDouble,
     bunk: redBunk,
     loft: redLoft,
     suite: redSuite,
-    grandSuite: redGrandSuite
-}
-
-const blue = {
+    grandSuite: redGrandSuite,
+  },
+  blue: {
     queen: blueQueen,
     king: blueking,
     double: blueDouble,
     loft: blueLoft,
     suite: blueSuite,
-    grandSuite: blueGrandSuite
-}
-
-const yellow = {
+    grandSuite: blueGrandSuite,
+  },
+  yellow: {
     queen: yellowQueen,
     king: yellowKing,
     double: yellowDouble,
     bunk: yellowBunk,
     loft: yellowLoft,
     suite: yellowSuite,
-}
-
-const green = {
+  },
+  green: {
     queen: greenQueen,
     king: greenKing,
     double: greenDouble,
     loft: greenLoft,
     suite: greenSuite,
-    bunk: greenBunk
+    bunk: greenBunk,
+  }
 }
 
-export default red 
+export default img

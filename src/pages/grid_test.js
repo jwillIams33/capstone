@@ -1,25 +1,23 @@
 import React from "react"
 import gridTest from "./newgrid.module.css"
 import ResponsiveHeader from "../components/example-2"
-
+import RoomList from "../components/roomList"
 import storage from "../components/storage"
+import { rooms, copy, title } from "../data/content"
 
+const color = "blue"
 
-const checkInDate = storage.get("checkInDate")
-const checkOutDate = storage.get("checkOutDate")
-const rooms = storage.get("numberOfRooms")
-
-const guests = storage.get("numberOfGuests")
+// const checkInDate = storage.get("checkInDate")
+// const checkOutDate = storage.get("checkOutDate")
+// const guests = storage.get("numberOfGuests")
 
 const greenPage = () => {
   return (
     <>
       <ResponsiveHeader />
-      <h2>Stay Summary</h2>
-      <p>Check-In: {checkInDate}</p>
-      <p>Check Out: {checkOutDate}</p>
-      <p>{rooms}</p>
-      <p>{guests}</p>
+      <h1>{title[color]}</h1>
+      <p>{copy[color]}</p>
+      <RoomList rooms={rooms[color]} color={color} />
     </>
   )
 }

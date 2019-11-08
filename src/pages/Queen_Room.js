@@ -5,26 +5,35 @@ import Header from "../components/header"
 import Rooms from "../data/rooms"
 import Row from "../components/row"
 import Wrapper from "../components/wrapper"
+import Column from "../components/column"
 
 import storage from "../components/storage"
 
+import flexboxGrid from "../components/flexboxGrid.module.css"
 
-import red from '../images/pageData'
+import {
+  queen,
+  king,
+  double,
+  bunk,
+  loft,
+  suite,
+  grandSuite,
+  title,
+} from "../data/content"
 
-import "react-datepicker/dist/react-datepicker.css"
-
-function imgGen(img){
-    let bg = {
-      backgroundImage: "url(" + img + ")",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      width: "100%",
-      height: "100%",
-      overflow: "hidden",
-    }
-    return bg
+function imgGen(img) {
+  let bg = {
+    backgroundImage: "url(" + img + ")",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: "100%",
+    height: "100%",
+    overflow: "hidden",
   }
+  return bg
+}
 
 const checkInDate = storage.get("checkInDate")
 const checkOutDate = storage.get("checkOutDate")
@@ -32,21 +41,69 @@ const rooms = storage.get("numberOfRooms")
 
 const guests = storage.get("numberOfGuests")
 
-
 const queenRoom = () => {
   return (
     <div>
       <Header />
 
-      <Hero style={imgGen(red.queen)} title={Rooms.colors.red} />
+      <Hero style={imgGen(queen.red)} title={title.red} />
 
       <Wrapper>
+        <Row>
+          <Column>
+            <p>CHECK-IN:</p>
+            <Row>
+              <p>{checkInDate}</p>
+            </Row>
+          </Column>
+          <Column>
+            <p>CHECK-OUT:</p>
+            <Row>
+              <p>{checkOutDate}</p>
+            </Row>
+          </Column>
+          <Column>
+            <p>GUESTS:</p>
+            <Row>
+              <p>{guests}</p>
+            </Row>
+          </Column>
+          <Column>
+            <p>ROOMS:</p>
+            <Row>
+              <p>{rooms}</p>
+            </Row>
+          </Column>
+          <Column>
+            <button>Select</button>
+          </Column>
+        </Row>
+        <section className={flexboxGrid.roomDetail}>
+          <h1>{queen.name}</h1>
+          <p>{queen.copy}</p>
+        </section>
+
+        <section className={flexboxGrid.roomDetail}>
+          <h2>Features:</h2>
           <Row>
-              <p>CHECK-IN: {checkInDate}</p><p>CHECK OUT: {checkOutDate}</p><p>GUESTS: {guests}</p><p>ROOMS: {rooms}</p>
+            <ul>
+              <li>High Speed Internet</li>
+              <li>Kuerig coffee/tea maker</li>
+              <li>minibar</li>
+            </ul>
+            <ul>
+              <li>Work Desk</li>
+              <li>Bluetooth Speakers</li>
+              <li>Direct TV</li>
+            </ul>
+            <ul>
+              <li>In-Room Safe</li>
+              <li>Valet Parking</li>
+              <li>Cups/glassware</li>
+            </ul>
           </Row>
+        </section>
       </Wrapper>
-        <h1>Queen Room</h1>
-        <section>Content</section>
       <Footer />
     </div>
   )

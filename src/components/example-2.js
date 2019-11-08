@@ -44,13 +44,6 @@ const ResponsiveHeader = props => {
           </ul>
         </div>
       </header>
-      <main>
-        <p>
-          sadlkjsdaf lkasdjf lkasdjflkasdjflk;asdjfkl;asdjfkljadsf
-          asdsadfasdfasdfasdf asd fasdf asdf adsf adsf asdf asdfasdf asdf asdf
-          asd fadsf dsaf dsaf adsf adf adfsasdf da aasdfsad fadsf.
-        </p>
-      </main>
     </>
   )
 }

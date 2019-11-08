@@ -7,12 +7,9 @@ import { Link } from "gatsby"
 import flexboxGrid from './flexboxGrid.module.css'
 
 import GridItemInfo from './gridItemInfo'
-import red from '../images/pageData'
 
-import redKing from "../images/red/red_king.jpg"
-import blueQueen from "../images/blue/blue-1.jpg"
-import yellowKing from "../images/yellow/yellow-king.jpg"
-import greenKing from "../images/green/green-8.jpg"
+
+import {queen, king, double, bunk, loft, suite, grandSuite} from "../data/content"
 
 
 import '../styles/index.css'
@@ -43,29 +40,29 @@ const RoomGrid = () => {
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.queen)}><Link className={flexboxGrid.linkStyles} to="/redPage">
+                        <div style={imgGen(queen.red)}><Link className={flexboxGrid.linkStyles} to="/Queen_Room">
                   red room
                 </Link></div>
                     </ImgContainer>
-                    <GridItemInfo type="Queen Room" price="$130.00"/>   
+                    <GridItemInfo type={queen.name} price={queen.price}/>   
                </Column>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.king)}></div>
+                        <div style={imgGen(king.red)}></div>
                     </ImgContainer>
-                    <GridItemInfo type="King Room" price="$130.00"/>  
+                    <GridItemInfo type="King Room" price={king.price}/>  
                </Column>
            </Row>
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.double)}></div>
+                        <div style={imgGen(double.red)}></div>
                     </ImgContainer>
                     <GridItemInfo type="Double Queen" price="$130.00"/>  
                </Column>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.bunk)}></div>
+                        <div style={imgGen(bunk.red)}></div>
                     </ImgContainer>
                     <GridItemInfo type="Double Bunk" price="$130.00"/>  
                </Column>
@@ -73,13 +70,13 @@ const RoomGrid = () => {
            <Row>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.loft)}></div>
+                        <div style={imgGen(loft.red)}></div>
                     </ImgContainer>
                     <GridItemInfo type="Loft" price="$130.00"/>  
                </Column>
                <Column>
                     <ImgContainer>
-                        <div style={imgGen(red.suite)}></div>
+                        <div style={imgGen(suite.red)}></div>
                     </ImgContainer>
                     <GridItemInfo type="Suite" price="$130.00"/>  
                </Column>
