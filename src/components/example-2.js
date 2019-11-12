@@ -18,7 +18,7 @@ const ResponsiveHeader = props => {
   return (
     <>
       <header>
-        {/* <div className={gridTest.row}>
+        <div className={gridTest.row}>
           <h2 className={gridTest.logo}>Logo</h2>
           <button
             onClick={() => setToggle(!isToggled)}
@@ -26,21 +26,15 @@ const ResponsiveHeader = props => {
           >
             {menu}
           </button>
-        </div> */}
+        </div>
 
         <div className={itemsClass}>
           <h2 className={gridTest.logo2}>Logo</h2>
-          <button
-            onClick={() => setToggle(!isToggled)}
-            className={gridTest.menu}
-          >
-            {menu}
-          </button>
-          <ul className={nav} role="nav">
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
-            <li className={gridTest.child}>Child</li>
+          <ul className={nav}>
+            <li className={gridTest.child}>Rooms</li>
+            <li className={gridTest.child}>Bars</li>
+            <li className={gridTest.child}>Meetings</li>
+            <li className={gridTest.child}>AAH! Tonight</li>
           </ul>
         </div>
       </header>

@@ -8,7 +8,9 @@
   border: none;
 } */
 
-p {color: white;}
+p {
+  color: white;
+}
 
 h1 {
   color: white;
@@ -27,17 +29,14 @@ h2 {
 }
 
 .nav {
-  top:0;
-  right:0;
-  /* display: inline-block; */
-  /* flex-direction: row; */
+  /* top:0;
+  right:0; */
+  display: flex;
+  flex-direction: row;
   margin: 0;
-
 }
 
-.nav > * {
-  display: inline-block;
-}
+
 
 .row {
   display: flex;
@@ -45,66 +44,61 @@ h2 {
   justify-content: space-between;
 }
 
-
-/* .logo {
-display: none;
-} */
+.logo {
+  display: none;
+}
 
 .items {
   display: flex;
   flex-direction: row;
   list-style: none;
   margin: 0;
-  text-align: center;
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
   justify-content: space-between;
 }
 
 .child {
-margin-left:1.3rem;
-flex-basis: 100%;
-list-style-type: none;
-padding: 10px;
+  margin-left: 1.3rem;
+  list-style-type: none;
+  padding: 10px;
 }
 
-/* .menu {
+.menu {
   display: none;
-} */
-
-@media(max-width:600px){
- .nav {
-   display: none;
-   margin: 0;
-   
- }
- .nav.is-toggled {
-   display: block;
-   position: absolute;
-   right: 0;
- }
- .menu {
-   display: block;
- }
- .items {
-   /* flex-basis: 100%;
-   flex-direction: column; */
- }
- /* .logo2 {
-   display: none;
- } */
- /* .logo {
-   display: block;
-   color:green;
- } */
- .child {
-   margin-left: 0 !important;
- }
-
 }
 
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+    margin: 0;
+  }
+  .nav.is-toggled {
+    display: block;
+    /* position: absolute; */
+    /* right: 0; */
+  }
+  .menu {
+    display: block;
+  }
+  .items {
+    flex-basis: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo2 {
+    display: none;
+  }
+  .logo {
+    display: block;
+    color: green;
+  }
+  .child {
+    margin-left: 0 !important;
+  }
+}
 
 body {
-  color: #fff;
+  color: #fff !important;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -155,8 +149,12 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
-  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -193,7 +191,6 @@ body {
 .rex-ray-image {
   background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/Rex-Ray-icon-209x300.png);
 }
-
 
 .sputnik-image {
   background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/sputnik-1-300x257.png);
@@ -261,19 +258,19 @@ body {
   bottom: 0;
   margin-bottom: 25px;
   padding-left: 0;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   font-size: 12px;
   display: flex;
 }
 
 .more-info i {
   padding-left: 5px;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .grid-item:hover .more-info i {
   padding-left: 20px;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .more-info i::before {
@@ -285,25 +282,25 @@ body {
   margin: -2% -2%;
 }
 
-@media(max-width: 1333px) {
+@media (max-width: 1333px) {
   .grid-item {
     flex-basis: 33.33%;
   }
 }
 
-@media(max-width: 1073px) {
-   .grid-item {
+@media (max-width: 1073px) {
+  .grid-item {
     flex-basis: 33.33%;
   }
 }
 
-@media(max-width: 815px) {
+@media (max-width: 815px) {
   .grid-item {
     flex-basis: 50%;
   }
 }
 
-@media(max-width: 620px) {
+@media (max-width: 620px) {
   .col {
     clear: both;
     float: none;
@@ -313,7 +310,7 @@ body {
   }
 }
 
-@media(max-width: 555px) {
+@media (max-width: 555px) {
   .grid-item {
     flex-basis: 100%;
   }
