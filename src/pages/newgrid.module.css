@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+.roomRow {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.roomItem {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.roomImage {
+  margin-bottom: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: "center";
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
 /* button {
   padding: 5px 20px;
   margin-left: 30px;
@@ -36,8 +57,6 @@ h2 {
   margin: 0;
 }
 
-
-
 .row {
   display: flex;
   flex-direction: row;
@@ -66,8 +85,21 @@ h2 {
 .menu {
   display: none;
 }
+.imgGrid {
+  display: flex;
+  /* flex-direction: row; */
+  flex-flow: row wrap;
+}
 
-@media (max-width: 600px) {
+
+
+/* @media (max-width: 815px){
+ .roomImage {
+   height: 300px;
+ }
+} */
+
+@media (max-width: 800px) {
   .nav {
     display: none;
     margin: 0;
@@ -90,12 +122,39 @@ h2 {
   }
   .logo {
     display: block;
-    color: green;
+    /* color: green; */
   }
   .child {
     margin-left: 0 !important;
   }
+
+  .imgGrid {
+    flex-direction: column;
+  }
+
+  .roomRow {
+    flex-direction: column;
+  }
+
+  .roomItem {
+    flex-basis: 100%;
+  }
+  /* .roomImage {
+    height: 300px;
+  } */
 }
+
+
+
+
+/* @media (max-width: 1073px) {
+  .roomItem {
+    flex-basis: 33.33%;
+  }
+  .roomImage {
+    height: 200px;
+  }
+} */
 
 body {
   color: #fff !important;
@@ -118,12 +177,13 @@ body {
 
 .grid-item {
   height: 300px;
-  flex-basis: 25%;
+  flex-basis: 50%;
   -ms-flex: auto;
   width: 400px;
   position: relative;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
 .grid-row a {
