@@ -8,7 +8,6 @@ import React from "react"
 // import { rooms } from "../data/content"
 import { Link } from "gatsby"
 import gridTest from "../pages/newgrid.module.css"
-import LinkTest from "../components/link_test"
 import flexboxGrid from "./flexboxGrid.module.css"
 
 function imgGen(img) {
@@ -34,7 +33,6 @@ const RoomList = props => {
   return (
     <>
       <div className={gridTest.roomRow}>{content}</div>
-      <LinkTest />
     </>
   )
 }
