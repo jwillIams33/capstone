@@ -1,19 +1,15 @@
 import React from "react"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 import Column from "./column"
-import ImgContainer from './imgContainer'
+import ImgContainer from "./imgContainer"
 import { Link } from "gatsby"
 
-const Img = props => {
+const Img = ({ id }) => {
   return (
     <Column>
-      <ImgContainer>
-        <div style={props.style}>
-          <Link className={flexboxGrid.linkStyles} to={props.link}>
-            {props.name}
-          </Link>
-        </div>
-      </ImgContainer>
+      <Link to={`/room_test/`} state={{ color: "red" }}>
+        view room
+      </Link>
     </Column>
   )
 }

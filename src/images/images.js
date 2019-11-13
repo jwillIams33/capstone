@@ -8,7 +8,7 @@ import redBunk from "./red/red-5.jpg"
 import redGrandSuite from "./red/1-bedroom-Grand-King-Suite.jpg"
 
 import greenDouble from "./green/green_double.jpg"
-import greenKing from "./green/green_king.jpg"
+import greenKing from "./green/green-8.jpg"
 import greenSuite from "./green/green_suite.jpg"
 import greenBunk from "./green/green-6.jpg"
 import greenLoft from "./green/green-loft.jpg"
@@ -22,10 +22,10 @@ import yellowLoft from "./yellow/yellow-loft.jpg"
 import yellowSuite from "./yellow/yellow_suite.jpg"
 
 import blueDouble from "./blue/blue_double.jpg"
-import blueQueen from "./blue/blue_queen.jpg"
+import blueQueen from "./blue/blue-1.jpg"
 import blueSuite from "./blue/blue_suite.jpg"
 import blueLoft from "./blue/blue-loft.jpg"
-import blueking from "./blue/blue_king.jpg"
+import blueking from "./blue/blue-1.jpg"
 import blueGrandSuite from "./blue/1-bedroom-Grand-King-Suite-Blue.jpg"
 
 
