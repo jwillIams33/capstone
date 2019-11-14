@@ -1,15 +1,15 @@
 import React from 'react'
-import Wrapper from './wrapper'
-import Row from './row'
-import Column from './column'
-import ImgContainer from './imgContainer'
+import Wrapper from './grid/wrapper'
+import Row from './grid/row'
+import Column from './grid/column'
+import ImgContainer from './legacy/imgContainer'
 import { Link } from "gatsby"
 import flexboxGrid from './flexboxGrid.module.css'
 
-import GridItemInfo from './gridItemInfo'
+import GridItemInfo from './legacy/gridItemInfo'
 
 
-import {queen, king, double, bunk, loft, suite, grandSuite} from "../data/content"
+import {queen, king, double, bunk, loft, suite} from "../data/content"
 
 
 import '../styles/index.css'

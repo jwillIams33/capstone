@@ -28,6 +28,10 @@ import blueLoft from "./blue/blue-loft.jpg"
 import blueking from "./blue/blue-1.jpg"
 import blueGrandSuite from "./blue/1-bedroom-Grand-King-Suite-Blue.jpg"
 
+import passionRed from "./artwork/passion_red.png"
+import happinessYellow from "./artwork/happiness_yellow.jpg"
+import rejuvenationGreen from "./artwork/rejuvention_green.jpg"
+import tranquilityBlue from "./artwork/tranquility_blue.png"
 
 
 
@@ -40,6 +44,7 @@ const img = {
     loft: redLoft,
     suite: redSuite,
     grandSuite: redGrandSuite,
+    art: passionRed
   },
   blue: {
     queen: blueQueen,
@@ -48,6 +53,7 @@ const img = {
     loft: blueLoft,
     suite: blueSuite,
     grandSuite: blueGrandSuite,
+    art: tranquilityBlue
   },
   yellow: {
     queen: yellowQueen,
@@ -56,6 +62,7 @@ const img = {
     bunk: yellowBunk,
     loft: yellowLoft,
     suite: yellowSuite,
+    art: happinessYellow
   },
   green: {
     queen: greenQueen,
@@ -64,6 +71,7 @@ const img = {
     loft: greenLoft,
     suite: greenSuite,
     bunk: greenBunk,
+    art: rejuvenationGreen
   }
 }
 

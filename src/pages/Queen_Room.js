@@ -1,11 +1,10 @@
 import React from "react"
-import Footer from "../components/footer"
+import Footer from "../components/layout/footer"
 import Hero from "../components/hero"
-import Header from "../components/header"
-import Rooms from "../data/rooms"
-import Row from "../components/row"
-import Wrapper from "../components/wrapper"
-import Column from "../components/column"
+import Header from "../components/layout/header"
+import Row from "../components/grid/row"
+import Wrapper from "../components/grid/wrapper"
+import Column from "../components/grid/column"
 
 import storage from "../components/storage"
 
@@ -13,13 +12,7 @@ import flexboxGrid from "../components/flexboxGrid.module.css"
 
 import {
   queen,
-  king,
-  double,
-  bunk,
-  loft,
-  suite,
-  grandSuite,
-  title,
+  title
 } from "../data/content"
 
 function imgGen(img) {

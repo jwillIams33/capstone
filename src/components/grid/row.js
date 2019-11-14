@@ -1,7 +1,6 @@
 import React from 'react'
-import flexboxGrid from './flexboxGrid.module.css'
-
-import '../styles/index.css'
+import flexboxGrid from '../flexboxGrid.module.css'
+import '../../styles/index.css'
 
 
 const Row = (props) => {

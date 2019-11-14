@@ -1,7 +1,7 @@
 import React from "react"
 import flexboxGrid from "../components/flexboxGrid.module.css"
-import Row from "./row"
-import Column from "./column"
+import Row from "./grid/row"
+import Column from "./grid/column"
 
 
 const Hero = props => {

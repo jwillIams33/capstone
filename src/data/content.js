@@ -31,7 +31,7 @@ const bunkRoomName = "Double Bunk Beds"
 const loftRoomName = "Loft King Room With Tub"
 const suiteRoomName = "1 Bedroom King Suite"
 const grandSuiteRoomName = " 1 Bedroom Grand King Suite"
-const twoBedroomGrandSuiteRoomName = "2 Bedroom Grand King Suite"
+// const twoBedroomGrandSuiteRoomName = "2 Bedroom Grand King Suite"
 
 const queenPrice = "$160.00"
 const kingPrice = "$135.00"
@@ -40,7 +40,7 @@ const bunkPrice = "$212.00"
 const loftPrice = "$237.00"
 const suitePrice = "$250.00"
 const grandSuitePrice = "$743.00"
-const twoBedroomSuitePrice = "$1210.00"
+// const twoBedroomSuitePrice = "$1210.00"
 
 const redURL = {
   queen: "/red_queen",
@@ -252,6 +252,9 @@ const rooms = {
   blue: tranquilityBlue,
   green: rejuvenationGreen,
 }
+
+// const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
+// const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
 
 export {
   queen,

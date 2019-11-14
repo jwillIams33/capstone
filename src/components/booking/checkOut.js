@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import DatePicker from "react-datepicker"
-import flexboxGrid from "./flexboxGrid.module.css"
-import Row from "./row"
-import storage from "./storage"
+import flexboxGrid from "../flexboxGrid.module.css"
+import Row from "../grid/row"
+import storage from "../storage"
 
 import "react-datepicker/dist/react-datepicker.css"
 import { subDays } from "date-fns"
@@ -31,7 +31,7 @@ const CheckOutDatePicker = props => {
 
   storage.set("checkOutDate", formattedDate)
 
-  const checkOut = storage.get("checkOutDate")
+  // const checkOut = storage.get("checkOutDate")
 
   
 

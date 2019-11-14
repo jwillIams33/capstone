@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react"
-import Row from "./row"
+import React, { useState } from "react"
+import Row from "../grid/row"
 import ListItem from "./listItem"
-import storage from "./storage"
+import storage from "../storage"
 
 // const storage = (localStorage) ? localStorage: {};
 
@@ -14,7 +14,7 @@ const RoomPicker = props => {
 
 storage.set("numberOfRooms", numberOfRooms)
 
-const rooms = storage.get("numberOfRooms")
+// const rooms = storage.get("numberOfRooms")
 
 
   const options = props.options

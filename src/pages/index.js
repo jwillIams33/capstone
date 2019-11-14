@@ -1,10 +1,10 @@
 import React from "react"
-import Footer from "../components/footer"
+import Footer from "../components/layout/footer"
 import Hero from "../components/hero"
 import SectionContent from "../components/sectionContent"
 import redKing from "../images/red/red_king.jpg"
 import ColorList from "../components/colorList"
-import ResponsiveHeader from "../components/example-2"
+import ResponsiveHeader from "../components/layout/responsiveHeader"
 
 const redKingImg = "url(" + redKing + ")";
 

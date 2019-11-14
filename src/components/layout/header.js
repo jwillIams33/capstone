@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import flexboxGrid from './flexboxGrid.module.css'
+import flexboxGrid from '../flexboxGrid.module.css'
 
 const Header = () => {
     return (

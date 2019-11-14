@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import gridTest from "../pages/newgrid.module.css"
+import gridTest from "../../pages/newgrid.module.css"
 
 const ResponsiveHeader = props => {
   const [isToggled, setToggle] = useState(false)
@@ -8,7 +8,6 @@ const ResponsiveHeader = props => {
   let nav = gridTest.nav
   let menu = "Menu"
 
-  let buttonItemsClass = itemsClass + " button"
 
   if (isToggled) {
     nav += "is-toggled"

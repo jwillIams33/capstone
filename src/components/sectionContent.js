@@ -1,5 +1,6 @@
 import React from "react"
 import flexboxGrid from "./flexboxGrid.module.css"
+import gridTest from "../pages/newgrid.module.css"
 
 const SectionContent = (props) => {
   return (
@@ -7,7 +8,7 @@ const SectionContent = (props) => {
       <div className={flexboxGrid.row}>
         <div className={flexboxGrid.column}>
           <div className={flexboxGrid.wrapper}>
-            <h1>{props.heading}</h1>
+            <h1 className={gridTest.headlineAlt}>{props.heading}</h1>
             <p>
               Featuring 146 artfully designed guest rooms, the first hotel in
               the world that gives you the option of booking your room not only

@@ -4,7 +4,7 @@ import gridTest from "../pages/newgrid.module.css"
 import flexboxGrid from "./flexboxGrid.module.css"
 import imgGen from "../helpers/imgGen"
 import { king } from "../data/content"
-import Wrapper from './wrapper'
+
 
 const { red: redImage, blue: blueImage, green: greenImage, yellow: yellowImage} = king
 

@@ -1,10 +1,8 @@
 import React, { useState } from "react"
 import DatePicker from "react-datepicker"
-import flexboxGrid from "./flexboxGrid.module.css"
-import Wrapper from "./wrapper"
-import Label from "./label"
-import Column from "./column"
-import Row from "./row"
+import Wrapper from "../grid/wrapper"
+import Column from "../grid/column"
+import Row from "../grid/row"
 
 import "react-datepicker/dist/react-datepicker.css"
 

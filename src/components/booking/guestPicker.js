@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import Row from "./row"
+import Row from "../grid/row"
 import ListItem from "./listItem"
-import storage from "./storage"
+import storage from "../storage"
 
 const GuestPicker = props => {
   const [numberOfGuests, setNumberOfGuests] = useState("1 Guest")

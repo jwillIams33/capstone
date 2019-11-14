@@ -1,8 +1,8 @@
 import React from "react"
-import gridTest from "../pages/newgrid.module.css"
-import Row from "../components/row"
-import Column from "../components/column"
-import storage from "../components/storage"
+import gridTest from "../../pages/newgrid.module.css"
+import Row from "../grid/row"
+import Column from "../grid/column"
+import storage from "../storage"
 
 const checkInDate = storage.get("checkInDate")
 const checkOutDate = storage.get("checkOutDate")

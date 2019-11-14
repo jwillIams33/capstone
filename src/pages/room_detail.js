@@ -1,11 +1,10 @@
 import React from "react"
-import Footer from "../components/footer"
+import Footer from "../components/layout/footer"
 import Hero from "../components/hero"
-import Header from "../components/header"
-import Row from "../components/row"
-import Wrapper from "../components/wrapper"
-import Column from "../components/column"
-import BookingSummary from "../components/bookingSummary"
+import Header from "../components/layout/header"
+import Row from "../components/grid/row"
+import Wrapper from "../components/grid/wrapper"
+import BookingSummary from "../components/layout/bookingSummary"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 import imgGen from "../helpers/imgGen"
 import gridTest from "../pages/newgrid.module.css"
@@ -21,12 +20,12 @@ const RoomDetail = ({location}) => {
       <Wrapper>
         <BookingSummary />
         <section className={flexboxGrid.roomDetail}>
-          <h1>{location.state.name}</h1>
+          <h1 className={gridTest.headline}>{location.state.name}</h1>
           <p>{location.state.copy}</p>
         </section>
 
         <section className={flexboxGrid.roomDetail}>
-          <h2>Features:</h2>
+          <h2 className={gridTest.subhead}>Features:</h2>
           <Row>
             <ul>
               <li>High Speed Internet</li>

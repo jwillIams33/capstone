@@ -1,7 +1,5 @@
 import React from "react"
-import flexboxGrid from "../components/flexboxGrid.module.css"
-import Column from "./column"
-import ImgContainer from "./imgContainer"
+import Column from "./grid/column"
 import { Link } from "gatsby"
 
 const Img = ({ id }) => {

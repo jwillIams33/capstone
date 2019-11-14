@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Oswald&display=swap');
+
+.headline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  /* letter-spacing: 0.1rem; */
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.headlineAlt {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.subhead {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 .roomRow {
   display: flex;
   flex-flow: row wrap;
@@ -88,6 +114,9 @@ h2 {
   margin-left: 1.3rem;
   list-style-type: none;
   padding: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ccc;
 }
 
 .menu {
@@ -101,11 +130,14 @@ h2 {
 
 
 
-/* @media (max-width: 815px){
- .roomImage {
+@media (min-width: 1500px){
+ /* .roomImage {
    height: 300px;
+ } */
+ .roomItem {
+   flex-basis: 33.33%;
  }
-} */
+}
 
 @media (max-width: 800px) {
   .nav {
@@ -166,7 +198,7 @@ h2 {
 
 body {
   color: #fff !important;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;

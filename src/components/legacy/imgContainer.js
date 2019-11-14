@@ -1,7 +1,7 @@
 import React from 'react'
-import flexboxGrid from './flexboxGrid.module.css'
+import flexboxGrid from '../flexboxGrid.module.css'
 
-import '../styles/index.css'
+import '../../styles/index.css'
 
 
 const ImgContainer = (props) => {

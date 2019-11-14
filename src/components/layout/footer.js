@@ -1,5 +1,5 @@
 import React from 'react'
-import flexboxGrid from './flexboxGrid.module.css'
+import flexboxGrid from '../flexboxGrid.module.css'
 
 const Footer = () => {
     return (
