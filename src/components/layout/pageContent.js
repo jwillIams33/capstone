@@ -1,8 +1,8 @@
 import React from "react"
-import gridTest from "../pages/newgrid.module.css"
-import ResponsiveHeader from "./layout/responsiveHeader"
-import RoomList from "../components/roomList"
-import { rooms, copy, title } from "../data/content"
+import gridTest from "../../pages/newgrid.module.css"
+import ResponsiveHeader from "./responsiveHeader"
+import RoomList from "./roomList"
+import { rooms, copy, title } from "../../data/content"
 
 
 const PageContent= props => {

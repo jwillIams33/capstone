@@ -132,7 +132,6 @@ const copy = {
 }
 
 const queen = {
-  id: "queen_room",
   name: queenRoomName,
   copy: queenCopy,
   price: queenPrice,
@@ -141,15 +140,14 @@ const queen = {
   green: img.green.queen,
   yellow: img.yellow.queen,
   url: {
-    red: "/Red_Queen",
-    blue: "/Blue_Queen",
-    green: "/Green_Queen",
-    yellow: "/Yellow_Queen"
+    red: "/red_queen",
+    blue: "/blue_queen",
+    green: "/green_queen",
+    yellow: "/yellow_queen"
   }
 }
 
 const king = {
-  id: "king_room",
   name: kingRoomName,
   copy: kingCopy,
   price: kingPrice,
@@ -158,15 +156,14 @@ const king = {
   green: img.green.king,
   yellow: img.yellow.king,
   url: {
-    red: "/Red_King",
-    blue: "/Blue_King",
-    green: "/Green_King",
-    yellow: "/Yellow_King",
+    red: "/red_king",
+    blue: "/blue_king",
+    green: "/green_king",
+    yellow: "/yellow_king",
   }
 }
 
 const double = {
-  id: "double",
   name: doubleRoomName,
   copy: doubleCopy,
   price: doubleRoomPrice,
@@ -175,15 +172,14 @@ const double = {
   green: img.green.double,
   yellow: img.yellow.double,
   url: {
-    red: "/Red_Double",
-    blue: "/Blue_Double",
-    green: "/Green_Double",
-    yellow: "/Yellow_Double"
+    red: "/red_double",
+    blue: "/blue_double",
+    green: "/green_double",
+    yellow: "/yellow_double"
   }
 }
 
 const bunk = {
-  id: "bunk",
   name: bunkRoomName,
   copy: bunkCopy,
   price: bunkPrice,
@@ -191,14 +187,13 @@ const bunk = {
   green: img.green.bunk,
   yellow: img.yellow.bunk,
   url: {
-    red: "/Red_Bunk",
-    green: "/Green_Bunk",
-    yellow: "/Yellow_Bunk"
+    red: "/red_bunk",
+    green: "/green_bunk",
+    yellow: "/yellow_bunk"
   }
 }
 
 const loft = {
-  id: "loft",
   name: loftRoomName,
   copy: loftCopy,
   price: loftPrice,
@@ -207,15 +202,14 @@ const loft = {
   green: img.green.loft,
   yellow: img.yellow.loft,
   url: {
-    red: "/Red_Loft",
-    blue: "/Blue_Loft",
-    green: "/Green_Loft",
-    yellow: "/Yellow_Loft"
+    red: "/red_queen",
+    blue: "/blue_queen",
+    green: "/green_queen",
+    yellow: "/yellow_queen"
   }
 }
 
 const suite = {
-  id: "suite",
   name: suiteRoomName,
   copy: suiteCopy,
   price: suitePrice,
@@ -224,15 +218,14 @@ const suite = {
   green: img.green.suite,
   yellow: img.yellow.suite,
   url: {
-    red: "/Red_Suite",
-    blue: "/Blue_Suite",
-    green: "/Green_Suite",
-    yellow: "/Yellow_Suite"
+    red: "/red_queen",
+    blue: "/blue_queen",
+    green: "/green_queen",
+    yellow: "/yellow_queen"
   }
 }
 
 const grandSuite = {
-  id: "grand_suite",
   name: grandSuiteRoomName,
   copy: grandSuiteCopy,
   price: grandSuitePrice,
@@ -250,18 +243,15 @@ const passionRed = [queen, king, double, bunk, loft, suite]
 const happinessYellow = [queen, king, double, bunk, loft, suite]
 const tranquilityBlue = [queen, king, double, loft, suite, grandSuite]
 const rejuvenationGreen = [queen, king, double, bunk, loft, suite]
-const roomCollection = {queen, king, double, bunk, loft, suite, grandSuite}
 
 // const rooms = [queen, king, double, bunk, loft, suite, grandSuite]
 
-// const rooms = [
-//   ["red", passionRed],
-//   ["yellow", happinessYellow],
-//   ["blue", tranquilityBlue],
-//   ["green", rejuvenationGreen]
-// ]
-
-const rooms = { red: passionRed, yellow: happinessYellow, blue: tranquilityBlue, green: rejuvenationGreen }
+const rooms = {
+  red: passionRed,
+  yellow: happinessYellow,
+  blue: tranquilityBlue,
+  green: rejuvenationGreen,
+}
 
 // const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
 // const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
@@ -278,5 +268,4 @@ export {
   rooms,
   copy,
   roomURL,
-  roomCollection
 }

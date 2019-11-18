@@ -1,0 +1,1 @@
+const img = require(`./src/images/images.js`);

@@ -1,9 +1,9 @@
 import React from "react"
 import gridTest from "./newgrid.module.css"
-import ResponsiveHeader from "../components/layout/responsiveHeader"
-import RoomList from "../components/roomList"
+import ResponsiveHeader from "../layout/responsiveHeader"
+import RoomList from "../layout/roomList"
 // import storage from "../components/storage"
-import { rooms, copy, title } from "../data/content"
+import { rooms, copy, title } from "../../data/content"
 
 const color = "red"
 

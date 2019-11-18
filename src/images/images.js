@@ -33,6 +33,10 @@ import happinessYellow from "./artwork/happiness_yellow.jpg"
 import rejuvenationGreen from "./artwork/rejuvention_green.jpg"
 import tranquilityBlue from "./artwork/tranquility_blue.png"
 
+// const m = new Map()
+
+// m.set('Red_King', redKing)
+
 
 
 const img = {

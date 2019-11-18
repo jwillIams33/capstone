@@ -1,10 +1,10 @@
 import React from "react"
-import Hero from "../components/hero"
+import Hero from "./hero"
 import gridTest from "../pages/newgrid.module.css"
-import ResponsiveHeader from "./layout/responsiveHeader"
-import RoomList from "../components/roomList"
-import imgGen from "../helpers/imgGen"
-import { rooms, copy, title } from "../data/content"
+import ResponsiveHeader from "./responsiveHeader"
+import RoomList from "./roomList"
+import imgGen from "../../helpers/imgGen"
+import { rooms, copy, title } from "../../data/content"
 
 const PageContent = props => {
   const color = props.color

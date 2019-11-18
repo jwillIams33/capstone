@@ -1,6 +1,6 @@
 import React from "react"
-import flexboxGrid from "./flexboxGrid.module.css"
-import gridTest from "../pages/newgrid.module.css"
+import flexboxGrid from "../flexboxGrid.module.css"
+import gridTest from "../../pages/newgrid.module.css"
 
 const SectionContent = (props) => {
   return (

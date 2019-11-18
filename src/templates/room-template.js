@@ -1,6 +1,9 @@
 import React from "react"
+import img from "../images/images"
+import PageContent from "../components/layout/pageContent"
+import { roomCollection } from "../data/content"
 import Footer from "../components/layout/footer"
-import Hero from "../components/hero"
+import Hero from "../components/layout/hero"
 import Header from "../components/layout/header"
 import Row from "../components/grid/row"
 import Wrapper from "../components/grid/wrapper"
@@ -9,22 +12,29 @@ import flexboxGrid from "../components/flexboxGrid.module.css"
 import imgGen from "../helpers/imgGen"
 import gridTest from "../pages/newgrid.module.css"
 
+const Template = ({ pageContext: { room }}) => {
 
-const RoomDetail = ({location}) => {
+  const color = room.color
+  const type = room.type
+
+  const getRoom = roomCollection[type]
+  const getRoomImg = getRoom[color]
+
   return (
     <div>
       <Header />
 
-      <Hero style={imgGen(location.state.img)} className={gridTest.roomImage}/>
+      <Hero style={imgGen(getRoomImg)} className={gridTest.roomImage}/>
 
       <Wrapper>
         <BookingSummary />
         <section className={flexboxGrid.roomDetail}>
-          <h1 className={gridTest.headline}>{location.state.name}</h1>
-          <p>{location.state.copy}</p>
+          <h1 className={gridTest.headline}>{getRoom.name}</h1>
+          <p>{getRoom.copy}</p>
         </section>
 
         <section className={flexboxGrid.roomDetail}>
+    
           <h2 className={gridTest.subhead}>Features:</h2>
           <Row>
             <ul>
@@ -50,4 +60,4 @@ const RoomDetail = ({location}) => {
   )
 }
 
-export default RoomDetail
+export default Template

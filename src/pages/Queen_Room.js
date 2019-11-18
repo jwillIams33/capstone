@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from "../components/layout/footer"
-import Hero from "../components/hero"
+import Hero from "../components/layout/hero"
 import Header from "../components/layout/header"
 import Row from "../components/grid/row"
 import Wrapper from "../components/grid/wrapper"

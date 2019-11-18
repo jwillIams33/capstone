@@ -1,5 +1,5 @@
 import React from "react"
-import Column from "./grid/column"
+import Column from "../grid/column"
 import { Link } from "gatsby"
 
 const Img = ({ id }) => {

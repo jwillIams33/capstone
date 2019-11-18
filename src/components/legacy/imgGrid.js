@@ -1,8 +1,8 @@
 import React from 'react'
-import Wrapper from './grid/wrapper'
-import Row from './grid/row'
-import Column from './grid/column'
-import ImgContainer from './legacy/imgContainer'
+import Wrapper from '../grid/wrapper'
+import Row from '../grid/row'
+import Column from '../grid/column'
+import ImgContainer from './imgContainer'
 import { Link } from "gatsby"
 import flexboxGrid from './flexboxGrid.module.css'
 

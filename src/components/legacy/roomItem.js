@@ -1,5 +1,5 @@
 import React from "react"
-import ImgContainer from "./legacy/imgContainer"
+import ImgContainer from "./imgContainer"
 import flexboxGrid from "./flexboxGrid.module.css"
 import {Link} from "gatsby"
 

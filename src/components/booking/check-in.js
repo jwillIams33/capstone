@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import DatePicker from "react-datepicker"
-import flexboxGrid from "./flexboxGrid.module.css"
-import Row from "./grid/row"
+import flexboxGrid from "../flexboxGrid.module.css"
+import Row from "../grid/row"
 
-import storage from "./storage"
+import storage from "../storage"
 
 import "react-datepicker/dist/react-datepicker.css"
 import { subDays } from "date-fns"

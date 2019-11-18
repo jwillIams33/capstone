@@ -1,7 +1,7 @@
 import React from "react"
-import Row from "./grid/row"
+import Row from "../grid/row"
 
-import ListItem from "./booking/listItem"
+import ListItem from "../booking/listItem"
 
 const OptionList = props => {
   const options = props.options

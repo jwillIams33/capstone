@@ -1,9 +1,9 @@
 import React from "react"
 import Footer from "../components/layout/footer"
-import Hero from "../components/hero"
-import SectionContent from "../components/sectionContent"
+import Hero from "../components/layout/hero"
+import SectionContent from "../components/layout/sectionContent"
 import redKing from "../images/red/red_king.jpg"
-import ColorList from "../components/colorList"
+import ColorList from "../components/layout/colorList"
 import ResponsiveHeader from "../components/layout/responsiveHeader"
 
 const redKingImg = "url(" + redKing + ")";
