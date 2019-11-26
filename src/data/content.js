@@ -131,6 +131,13 @@ const copy = {
   yellow: yellowPageCopy,
 }
 
+const art = {
+  red: img.red.art,
+  blue: img.blue.art,
+  yellow: img.yellow.art,
+  green: img.green.art
+}
+
 const queen = {
   id: "queen_room",
   name: queenRoomName,
@@ -278,5 +285,6 @@ export {
   rooms,
   copy,
   roomURL,
-  roomCollection
+  roomCollection,
+  art
 }

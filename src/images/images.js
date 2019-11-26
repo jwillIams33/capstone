@@ -28,10 +28,10 @@ import blueLoft from "./blue/blue-loft.jpg"
 import blueking from "./blue/blue-1.jpg"
 import blueGrandSuite from "./blue/1-bedroom-Grand-King-Suite-Blue.jpg"
 
-import passionRed from "./artwork/passion_red.png"
-import happinessYellow from "./artwork/happiness_yellow.jpg"
-import rejuvenationGreen from "./artwork/rejuvention_green.jpg"
-import tranquilityBlue from "./artwork/tranquility_blue.png"
+import passionRed from "./artwork/Room-RED.jpg"
+import happinessYellow from "./artwork/Room-yellow.jpg"
+import rejuvenationGreen from "./artwork/Room-GREEN.jpg"
+import tranquilityBlue from "./artwork/Room-BLUE.jpg"
 
 // const m = new Map()
 

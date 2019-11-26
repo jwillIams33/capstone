@@ -30,6 +30,9 @@ body {
   overflow: hidden;
   font-size: 2rem;
   text-transform: uppercase;
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  background-position: "center";
 }
 
 .roomImage {
@@ -80,6 +83,11 @@ input {
   .hero {
     min-height: 660px;
     font-size: 3rem;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-repeat: "no-repeat";
+    background-size: "cover";
+    background-position: "center";
   }
 
   .column {
