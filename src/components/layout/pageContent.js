@@ -16,7 +16,7 @@ const PageContent= props => {
     <>
     <main>
       <ResponsiveHeader />
-      <Hero style={imgGen(getArt)} className={gridTest.roomImage}/>
+      <Hero style={imgGen(getArt)} className={gridTest.roomImage} title={title[color]}/>
       <h1 className={gridTest.headlineAlt}>{title[color]}</h1>
       <p>{copy[color]}</p>
       <RoomList rooms={rooms[color]} color={color} />

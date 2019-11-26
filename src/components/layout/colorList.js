@@ -36,12 +36,16 @@ const { red: redImage, blue: blueImage, green: greenImage, yellow: yellowImage} 
 
     const colorList = [red, blue, green, yellow]
 
+    
+  
 
 
 const ColorList = () => {
   const content = colorList.map(item => (
-    <div className={gridTest.roomItem}>
-      <div style={imgGen(item.img)} className={gridTest.roomImage}><Link className={flexboxGrid.linkStyles} to={item.link} state ={{color: item.state}}>{item.name}</Link></div>
+    <div className={gridTest.colorItem}>
+      <div className={gridTest.contentOverlay}></div>
+<div style={imgGen(item.img)} className={gridTest.roomImage}><Link className={flexboxGrid.linkStyles} to={item.link} state ={{color: item.state}}>{item.name}</Link></div>
+  <div className={gridTest.contentDetails}><h3>{item.name}</h3></div>
     </div>
   ))
 

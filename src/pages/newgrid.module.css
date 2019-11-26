@@ -37,6 +37,76 @@
   box-sizing: border-box;
 }
 
+.colorItem {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.colorItem .contentOverlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.colorItem:hover .contentOverlay{
+  opacity: 1;
+}
+
+.colorItem span {
+ opacity: 0;
+}
+
+.contentDetails {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.colorItem:hover .contentDetails{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.contentDetails h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+/* .colorItem:hover {
+  opacity: 0.5
+} */
+
+/* .colorItem:hover span{
+  opacity: 1
+ } */
+
 .roomImage {
   margin-bottom: 0.5rem;
   background-repeat: no-repeat;
@@ -177,6 +247,10 @@ h2 {
   }
 
   .roomItem {
+    flex-basis: 100%;
+  }
+
+  .colorItem{
     flex-basis: 100%;
   }
   /* .roomImage {
