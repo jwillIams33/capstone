@@ -10,7 +10,9 @@ import Wrapper from "../components/grid/wrapper"
 import BookingSummary from "../components/layout/bookingSummary"
 import flexboxGrid from "../components/flexboxGrid.module.css"
 import imgGen from "../helpers/imgGen"
+import heroGen from "../helpers/heroGen"
 import gridTest from "../pages/newgrid.module.css"
+import ResponsiveHeader from "../components/layout/responsiveHeader"
 
 const Template = ({ pageContext: { room }}) => {
 
@@ -22,20 +24,20 @@ const Template = ({ pageContext: { room }}) => {
 
   return (
     <div>
-      <Header />
+      <ResponsiveHeader />
 
-      <Hero style={imgGen(getRoomImg)} className={gridTest.roomImage}/>
+      <Hero style={heroGen(getRoomImg)} className={gridTest.roomImage} title={getRoom.name}/>
 
       <Wrapper>
         <BookingSummary />
         <section className={flexboxGrid.roomDetail}>
-          <h1 className={gridTest.headline}>{getRoom.name}</h1>
+          {/* <h1 className={gridTest.headline}>{getRoom.name}</h1> */}
           <p>{getRoom.copy}</p>
         </section>
 
         <section className={flexboxGrid.roomDetail}>
     
-          <h2 className={gridTest.subhead}>Features:</h2>
+          <Row><h2 className={gridTest.subhead}>Features:</h2></Row>
           <Row>
             <ul>
               <li>High Speed Internet</li>

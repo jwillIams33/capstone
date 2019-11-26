@@ -124,6 +124,9 @@ const title = {
   blue: "Tranquility Blue",
 }
 
+const mainHero = img.home;
+
+
 const copy = {
   red: redPageCopy,
   blue: bluePageCopy,
@@ -270,8 +273,8 @@ const roomCollection = {queen, king, double, bunk, loft, suite, grandSuite}
 
 const rooms = { red: passionRed, yellow: happinessYellow, blue: tranquilityBlue, green: rejuvenationGreen }
 
-// const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
-// const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
+const guestOptions = ["1 Guest", "2 Guests", "3 Guests", "4 Guests"]
+const roomOptions = ["1 Room", "2 Rooms", "3 Rooms", "4 Rooms"]
 
 export {
   queen,
@@ -286,5 +289,8 @@ export {
   copy,
   roomURL,
   roomCollection,
-  art
+  art,
+  mainHero,
+  guestOptions,
+  roomOptions
 }

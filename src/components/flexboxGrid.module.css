@@ -23,7 +23,6 @@ body {
 
 .column {
   flex-basis: 100%;
-  margin: .8rem;
 }
 .hero {
   line-height: 300px;
@@ -78,10 +77,11 @@ input {
     flex-wrap: nowrap;
     color: white;
     justify-content: space-evenly;
+   
   }
 
   .hero {
-    min-height: 660px;
+    height: 660px;
     font-size: 3rem;
     overflow: hidden;
     text-transform: uppercase;

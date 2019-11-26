@@ -10,9 +10,13 @@ const rooms = storage.get("numberOfRooms")
 const guests = storage.get("numberOfGuests")
 
 const BookingSummary = () => {
+
+  const style = {
+    paddingTop: "20px"
+  }
   return (
     <>
-      <main className={gridTest.container}>
+      <main style={style} className={gridTest.container}>
       <Row>
           <Column>
             <p>CHECK-IN:</p>

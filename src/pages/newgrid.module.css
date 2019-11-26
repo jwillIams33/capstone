@@ -12,6 +12,26 @@
   font-weight: 600;
 }
 
+.links {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.responsive {
+  /* padding: 1em; */
+
+}
+
 .headlineAlt {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
@@ -24,11 +44,13 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   font-weight: 400;
+  padding-bottom: 30px;
 }
 
 .roomRow {
   display: flex;
   flex-flow: row wrap;
+  padding: 10px;
 }
 
 .roomItem {
@@ -125,13 +147,13 @@
 
 }
 
-/* button {
+button {
   padding: 5px 20px;
   margin-left: 30px;
   color: white;
   background-color:rgba(0,0,0,0);
-  border: none;
-} */
+  border: 2px solid #aaa;
+}
 
 p {
   color: white;
@@ -165,6 +187,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .logo {
@@ -226,6 +249,7 @@ h2 {
     flex-basis: 100%;
     flex-direction: column;
     text-align: center;
+    position: relative;
   }
   .logo2 {
     display: none;
@@ -279,8 +303,14 @@ body {
 }
 
 .container {
-  max-width: 1335px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.bodyText {
+  /* width: 36em; */
+  max-width: 100%;
+  padding: 4rem;
 }
 
 .grid-row {

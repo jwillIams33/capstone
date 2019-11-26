@@ -33,6 +33,8 @@ import happinessYellow from "./artwork/Room-yellow.jpg"
 import rejuvenationGreen from "./artwork/Room-GREEN.jpg"
 import tranquilityBlue from "./artwork/Room-BLUE.jpg"
 
+import mainHero from "./angad-arts-hotel-grand.jpg"
+
 // const m = new Map()
 
 // m.set('Red_King', redKing)
@@ -76,7 +78,8 @@ const img = {
     suite: greenSuite,
     bunk: greenBunk,
     art: rejuvenationGreen
-  }
+  },
+  home: mainHero
 }
 
 export default img
